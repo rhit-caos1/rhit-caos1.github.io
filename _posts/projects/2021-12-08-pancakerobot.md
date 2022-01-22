@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 permalink: /:title/
 category: projects
 
@@ -25,4 +25,4 @@ images:
     url: "/assets/images/projects/redpineapple/mobile.jpg"
     alt: "Red Pineapple website on a mobile device"
 ---
-<p>Robot pancake chef!!!.</p>
+<p>Robot pancake chef!!!</p>
