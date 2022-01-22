@@ -27,4 +27,4 @@ images:
 ---
 
 
-<p>Robot pancake chef!!!</p>
+<p>Here I'll put the description for the pancake robot package</p>
