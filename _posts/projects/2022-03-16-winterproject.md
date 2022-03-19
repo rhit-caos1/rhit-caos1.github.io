@@ -4,14 +4,14 @@ permalink: /:title/
 category: projects
 
 meta:
-  keywords: "ROS, Computer Vision, Robotic Manipulation"
+  keywords: "Deep Learning, Computer Vision, Pytorch"
 
 project:
   title: "Robotic Pancake Chef"
   type: "Jekyll"
   url: "https://github.com/javtges/robot-pancake-chef"
   logo: "/assets/images/projects/pancake/pancake_flip.jpg"
-  tech: "ROS, Python, OpenCV, MoveIt"
+  tech: "Deep Learning, Computer Vision, Pytorch"
 
 
 images:
@@ -27,10 +27,14 @@ images:
 ---
 
 
-<p>In this project, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
+<p>In this project, a final course project for ME495 - Embedded Systems in Robotics, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
 <br>
+
+
 <p>Given a spatula and a bottle of pancake batter, the robot is able to manipulate the tools, flip the pancake, and serve it onto a plate.</p>
 <br>
+
+
 <p>My primary role in this project was designing and implimenting the perception pipeline that senses where tools are located, the pancake location to assist with flipping & lifting the pancake, and auntonomously determining when the pancake should be flipped.</p>
 <br>
 
