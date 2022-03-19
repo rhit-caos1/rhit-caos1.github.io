@@ -10,28 +10,32 @@ project:
   title: "Deep Learning for Gesture Recognition"
   type: "Jekyll"
   url: "https://github.com/javtges/"
-  logo: "/assets/images/projects/pancake/pancake_flip.jpg"
+  logo: "/assets/images/projects/gesture/fist_gesture.png"
   tech: "Deep Learning, Computer Vision, Pytorch"
 
 
 images:
-  - image:
-    url: "/assets/images/projects/pancake/IMG_6158.jpg"
-    alt: "An overhead view of the robot"
-  - image:
-    url: "/assets/images/projects/pancake/pancake_flip2.jpg"
-    alt: "Flipping a pancake with chocolate chips"
-  - image:
-    url: "/assets/images/projects/pancake/pancake_flip.jpg"
-    alt: "A finished pancake deposited onto a plate"
+  # - image:
+  #   url: "/assets/images/projects/pancake/IMG_6158.jpg"
+  #   alt: "An overhead view of the robot"
+  # - image:
+  #   url: "/assets/images/projects/pancake/pancake_flip2.jpg"
+  #   alt: "Flipping a pancake with chocolate chips"
+  # - image:
+  #   url: "/assets/images/projects/pancake/pancake_flip.jpg"
+  #   alt: "A finished pancake deposited onto a plate"
 ---
 
 
-<p>In this project, a final course project for ME495 - Embedded Systems in Robotics, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
+<p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about.
+<br>
+However, in practice, dynamic gesture recognition is a surprisingly difficult task, which I approach in this project. Starting as a total beginner in deep learning, I experimented with and implimented multiple common methods of recognizing dynamic hand gestures.</p>
 <br>
 
 
-<p>Given a spatula and a bottle of pancake batter, the robot is able to manipulate the tools, flip the pancake, and serve it onto a plate.</p>
+<p>Time-series data struggles with a fundemental challenge in live inference tasks - that is, the problem of segmentation. In a live video stream, there's no definite beginning or end of the gesture, and the time the gesture takes to be performed can be variable.
+<br>
+Various solutions to this temporal classificaion problem exist in the deep learning space, most prominently recurrent neural networks (RNNs) which take multiple inputs - a more traditional input for a CNN layer, and a previous state of the RNN. This is used in models such as LTSMs, and specific loss functions have been developed for use with these networks, such as CTC: Connectionist Temporal Classification loss.</p>
 <br>
 
 
