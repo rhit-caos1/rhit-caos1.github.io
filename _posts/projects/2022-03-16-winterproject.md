@@ -7,9 +7,9 @@ meta:
   keywords: "Deep Learning, Computer Vision, Pytorch"
 
 project:
-  title: "Robotic Pancake Chef"
+  title: "Deep Learning for Gesture Recognition"
   type: "Jekyll"
-  url: "https://github.com/javtges/robot-pancake-chef"
+  url: "https://github.com/javtges/"
   logo: "/assets/images/projects/pancake/pancake_flip.jpg"
   tech: "Deep Learning, Computer Vision, Pytorch"
 
