@@ -9,7 +9,7 @@ meta:
 project:
   title: "Deep Learning for Gesture Recognition"
   type: "Jekyll"
-  url: "https://github.com/javtges/"
+  url: "https://github.com/javtges/dronegesturecontrol"
   logo: "/assets/images/projects/gesture/fist_gesture.png"
   tech: "Deep Learning, Computer Vision, Pytorch"
 
