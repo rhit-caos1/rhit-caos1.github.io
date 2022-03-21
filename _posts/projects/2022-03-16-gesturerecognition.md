@@ -21,6 +21,9 @@ images:
   - image:
     url: "/assets/images/projects/gesture/dataset_image.png"
     alt: "Infrared image from a dataset"
+  - image:
+    url: "/assets/images/projects/gesture/drone.png"
+    image:
 ---
 
 
