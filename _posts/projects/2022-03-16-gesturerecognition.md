@@ -74,3 +74,5 @@ This has to do with the input datatype, where the hands in the dataset are clear
 <p>
 Controlling the drone is accomplished by sending commands to the drone corresponding to the gesture detected, provided the decision proability is greater than a threshold of 0.7. Once a gesture is found, the next N frames are ignored.
 </p> <br>
+
+<p> More information and the source code for this project can be found on its <a href="https://github.com/javtges/dronegesturecontrol" target="_blank"> <u>GitHub Repository</u> </a>.</p>
