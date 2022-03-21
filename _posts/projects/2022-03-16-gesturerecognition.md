@@ -39,20 +39,20 @@ Various solutions to this temporal classificaion problem exist in the deep learn
 <br>
 
 <p>
-Two different 3DCNNs, used for classifying video rather than a 2DCNN which is used on images, were implimented on Pytorch and trained on the nvGesture dataset. The two networks that were implimented were [C3D](https://arxiv.org/abs/1412.0767) and [Resnet 2+1d](https://arxiv.org/pdf/1711.11248.pdf). Both networks extract spatiotemporal features, useful for classifying gestures.</p>
+Two different 3DCNNs, used for classifying video rather than a 2DCNN which is used on images, were implimented on Pytorch and trained on the nvGesture dataset. The two networks that were implimented were <a href="https://arxiv.org/abs/1412.0767" target="_blank"><u>C3D</u> </a> and <a href="https://arxiv.org/pdf/1711.11248.pdf" target="_blank"><u>Resnet 2+1d</u></a>. Both networks extract spatiotemporal features, useful for classifying gestures.</p>
 
 <br>
 
 <p>
-While using C3D to emulate the results in a [2016 paper by NVIDIA](https://research.nvidia.com/sites/default/files/pubs/2016-06_Online-Detection-and/NVIDIA_R3DCNN_cvpr2016.pdf) to classify gestures in the nvGesture dataset yielded training results were not as expected, this was still a great introduction to Pytorch by attempting to solve a difficult problem. </p> <br>
+While using C3D to emulate the results in a <a href="https://research.nvidia.com/sites/default/files/pubs/2016-06_Online-Detection-and/NVIDIA_R3DCNN_cvpr2016.pdf" target="_blank"><u>2016 paper by NVIDIA</u></a> to classify gestures in the nvGesture dataset yielded training results were not as expected, this was still a great introduction to Pytorch by attempting to solve a difficult problem. </p> <br>
 
-<p> Additionally, a parallelized 1DCNN was implimented to classify dynamic hand gestures in the [DHG-14 dataset](http://www-rech.telecom-lille.fr/shrec2017-hand/), using the XYZ coordaintes of skeletal points on a hand as detected through softwares such as Mediapipe. This included a real-time infrence wrapper around [this network](https://github.com/guillaumephd/deep_learning_hand_gesture_recognition). While training and validation accuracies were strong, this suffers from the same segmentation problem as before. </p>
+<p> Additionally, a parallelized 1DCNN was implimented to classify dynamic hand gestures in the <a href="http://www-rech.telecom-lille.fr/shrec2017-hand/" target="_blank"><u>DHG-14 dataset</u></a>, using the XYZ coordaintes of skeletal points on a hand as detected through softwares such as Mediapipe. This included a real-time infrence wrapper around <a href="https://github.com/guillaumephd/deep_learning_hand_gesture_recognition" target="_blank"><u>this network</u></a>. While training and validation accuracies were strong, this suffers from the same segmentation problem as before. </p>
 
 <br>
 
 <p>
 
-Finally, a dataset of static images of hands in an infrared camera was used to classify static gestures from a [leap motion camera](https://www.kaggle.com/gti-upm/leapgestrecog). Given the nature of the images, this can be approximated by depth data too, with background removal. A 2D CNN was implimented in Pytorch, with parsing of the dataset files courtesy of [kaggle](https://www.kaggle.com/kageyama/keras-hand-gesture-recognition-cnn/notebook). The implimented classifier works on single frames in a video stream, and is accurate enough to achieve high performance in real time with a framerate of 30 FPS.
+Finally, a dataset of static images of hands in an infrared camera was used to classify static gestures from a <a href="https://www.kaggle.com/gti-upm/leapgestrecog" target="_blank"><u>leap motion camera</u></a>. Given the nature of the images, this can be approximated by depth data too, with background removal. A 2D CNN was implimented in Pytorch, with parsing of the dataset files courtesy of <a href="https://www.kaggle.com/kageyama/keras-hand-gesture-recognition-cnn/notebook" target="_blank"><u>kaggle</u></a>. The implimented classifier works on single frames in a video stream, and is accurate enough to achieve high performance in real time with a framerate of 30 FPS.
 
 </p> <br>
 
@@ -60,7 +60,7 @@ Finally, a dataset of static images of hands in an infrared camera was used to c
 Controlling the Drone </p> <br>
 
 <p>
-This project uses a Dji Tello Edu drone, as it provides an easy-to-interface software development kit. Commands that can be sent to the drone are listed [here](https://djitellopy.readthedocs.io/en/latest/tello/). Each gesture will correspond to a movement in this SDK. </p> <br>
+This project uses a Dji Tello Edu drone, as it provides an easy-to-interface software development kit. Commands that can be sent to the drone are listed in the <a href="https://djitellopy.readthedocs.io/en/latest/tello/" target="_blank"> <u>SDK documentation</u></a>. Each gesture will correspond to a movement in this SDK. </p> <br>
 
 <p>
 The final demonstration as of March 17th uses the Depth/Infrared Classifier, to differentiate between 10 static hand gestures in a depth or infrared video stream. While training and validation accuracy exceeds 99% on the training dataset, the real-time recongition capability is signifigantly diminished - being able to reliably differentiate between four or five of the classes.
