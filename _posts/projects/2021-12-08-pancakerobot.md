@@ -37,6 +37,8 @@ images:
 <p>The perception pipeline begins with an Intel Realsense D435i camera, which provides an RGB-D image. This depth data allows the pancake to be found using OpenCV contour recognition, in 3-Dimensions relative to the camera. The camera's coordinate frame is linked to the robot's coordinate frame via an AprilTag a fixed distance from the robot base. The tools are located via AprilTags as well, provided the tag is visible the pipeline is able to determine the 6-DOF pose of the object without any depth data.</p>
 <br>
 
+![test image](/assets/images/projects/pancake/pancake_flip.jpg)
+
 <p>Once the pancake is put onto the griddle, the perception pipeline begins counting the bubbles that appear on the pancake's surface, much like a human would determine when it's time to flip the pancake.</p>
 <br>
 
