@@ -151,6 +151,7 @@
 	left: 0;
 	position: relative;
 	top: 0;
+	max-width: 70%;
 
 	@media (min-width: $breakpoint-medium) {
 		margin-top: -21rem;
