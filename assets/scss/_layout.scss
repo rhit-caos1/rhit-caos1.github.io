@@ -144,11 +144,9 @@
 	}
 
 	img {
-		margin-top: 16px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 60%;
-		margin-bottom: 16px;
+		width: 100%;
 	}
 
 	span {
@@ -177,11 +175,6 @@
 	.container {
 		max-width: 70%;
 
-		@media (min-width: $breakpoint-medium) {
-			margin-right: auto;
-			margin-left: auto;
-			width: 60%
-		}
 	}
 
 	article {

@@ -30,7 +30,7 @@ images:
 <p>In this project, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
 <br>
 
-![An overhead view of the robot](/assets/images/projects/pancake/IMG_6158.jpg){{:class="img"}}
+![An overhead view of the robot](/assets/images/projects/pancake/IMG_6158.jpg){{:class=".project img"}}
 
 <p>Given a spatula and a bottle of pancake batter, the robot is able to manipulate the tools, flip the pancake, and serve it onto a plate.</p>
 <br>
