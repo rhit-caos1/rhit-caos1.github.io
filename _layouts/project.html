@@ -11,9 +11,9 @@
 	{% include header.html %}
 	<main class="content">
 		<section class="project">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<!-- <article> -->
-				<span class="h2">Project Title</span>
+				<!-- <span class="h2">Project Title</span>
 				<h1>
 					<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 				</h1>
@@ -21,8 +21,11 @@
 					<span class="h2">Technologies</span>
 					<p>{{ page.project.tech }}</p>
 				</div>
-				<span class="h2">Project</span>
-				{{ content }}
+				<span class="h2">Project</span> -->
+
+			{{ page.project.tech }}
+			{{ page.project.title }}
+			{{ content }}
 					
 				<!-- </article> -->
 				<!-- <aside>
@@ -34,7 +37,7 @@
 						{% endfor %}
 					</ul>
 				</aside> -->
-			</div>
+			<!-- </div> -->
 		</section>
 		<section class="project-navigation">
 			<div class="container">
