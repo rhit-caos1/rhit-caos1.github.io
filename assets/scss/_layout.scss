@@ -389,6 +389,10 @@
 	height: 0;
 	overflow: hidden;
 	max-width: 100%;
+
+	@media (min-width: $breakpoint-medium){
+		max-width: 70%;
+	}
   }
   
   .embed-container iframe, .embed-container object, .embed-container embed {
