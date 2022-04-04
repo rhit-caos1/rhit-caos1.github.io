@@ -27,7 +27,9 @@ images:
 ---
 
 
-<p> <a href="https://youtu.be/BBnZKu9_Neg" target="_blank"><u>Drone control via gesture</u> </a> </p><br>
+
+<iframe width="480" height="360" src="https://youtu.be/BBnZKu9_Neg" frameborder="0"> </iframe>
+<br>
 
 <p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about.
 <br>
