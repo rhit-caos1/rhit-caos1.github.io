@@ -1,7 +1,4 @@
-// $content-width:    800px;
-// $on-phone:         450px;
-// $on-palm:          660px;
-// $on-laptop:        1000px;
+
 
 .container {
 	display: block;
@@ -237,8 +234,11 @@
 	img {
 		margin-right: auto;
 		margin-left: auto;
-		max-width: 40%;
-		margin-bottom: 16px;
+		@media (min-width: $breakpoint-medium){
+			max-width: 40%;
+			margin-bottom: 16px;
+		}
+
 	}
 }
 
