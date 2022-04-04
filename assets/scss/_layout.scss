@@ -144,11 +144,9 @@
 	}
 
 	img {
-		margin-top: 16px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 60%;
-		margin-bottom: 16px;
+		width: 100%;
 	}
 
 	span {
@@ -242,9 +240,11 @@
 	}
 
 	img {
+		margin-top: 16px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 100%
+		width: 60%;
+		margin-bottom: 16px;
 	}
 }
 
