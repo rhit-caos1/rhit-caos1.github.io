@@ -388,10 +388,11 @@
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
-	max-width: 100%;
 
 	@media (min-width: $breakpoint-medium){
 		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
 	}
   }
   
