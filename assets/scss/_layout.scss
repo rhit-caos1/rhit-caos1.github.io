@@ -1,6 +1,6 @@
 .container {
 	display: block;
-	margin: 10 auto;
+	margin: 0 auto;
 	max-width: 70em;
 	padding: 0 3rem;
 	@include clearfix;
@@ -165,7 +165,7 @@
 	}
 
 	.container {
-		max-width: 100%;
+		max-width: 70%;
 	}
 
 	article {
