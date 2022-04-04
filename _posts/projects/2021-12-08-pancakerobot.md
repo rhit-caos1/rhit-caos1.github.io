@@ -27,14 +27,14 @@ images:
 ---
 
 
-<p>In this project, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
+<p>In this project, a Franka Emika Panda robot arm was programmed to autonomously cook pancakes.</p>
 <br>
 
 ![An overhead view of the robot](/assets/images/projects/pancake/IMG_6158.jpg)
 
 <p>Given a spatula and a bottle of pancake batter, the robot is able to manipulate the tools, flip the pancake, and serve it onto a plate.</p>
 <br>
-<p>My primary role in this project was designing and implimenting the perception pipeline that senses where tools are located, the pancake location to assist with flipping & lifting the pancake, and auntonomously determining when the pancake should be flipped.</p>
+<p>My primary role in this project was designing and implimenting the perception pipeline that senses where tools are located, the pancake location to assist with flipping & lifting the pancake, and autonomously determining when the pancake should be flipped.</p>
 <br>
 
 <p>The perception pipeline begins with an Intel Realsense D435i camera, which provides an RGB-D image. This depth data allows the pancake to be found using OpenCV contour recognition, in 3-Dimensions relative to the camera. The camera's coordinate frame is linked to the robot's coordinate frame via an AprilTag a fixed distance from the robot base. The tools are located via AprilTags as well, provided the tag is visible the pipeline is able to determine the 6-DOF pose of the object without any depth data.</p>
@@ -48,7 +48,7 @@ images:
 <p>This perception pipeline is integrated into ROS Noetic, which controls the arm using the MoveIt! control package. Motion planning is accomplished by specifying a target pose and using an RRT to plan a set of joint states that bring the robot to the pose while abiding by planning scene constraints (the table, the camera, etc).</p>
 <br>
 
-<p>Final results yield a program that is able to successfully make pancakes auntonomously with high rates of success. Future work may involve adding toppings, or flipping the pancake in the air with a frying pan rather than a spatula.</p>
+<p>Final results yield a program that is able to successfully make pancakes with high rates of success. Future work may involve adding toppings, or flipping the pancake in the air with a frying pan rather than a spatula.</p>
 <br>
 
 ![A finished pancake deposited onto a plate](/assets/images/projects/pancake/pancake_flip.jpg)
