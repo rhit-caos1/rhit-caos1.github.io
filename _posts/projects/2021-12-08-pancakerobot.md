@@ -27,7 +27,7 @@ images:
 ---
 
 
-<!-- <p>In this project, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
+<p>In this project, a Franka Emika Panda robot arm was programmed to auntonomously cook pancakes.</p>
 <br>
 <p>Given a spatula and a bottle of pancake batter, the robot is able to manipulate the tools, flip the pancake, and serve it onto a plate.</p>
 <br>
@@ -35,21 +35,15 @@ images:
 <br>
 
 <p>The perception pipeline begins with an Intel Realsense D435i camera, which provides an RGB-D image. This depth data allows the pancake to be found using OpenCV contour recognition, in 3-Dimensions relative to the camera. The camera's coordinate frame is linked to the robot's coordinate frame via an AprilTag a fixed distance from the robot base. The tools are located via AprilTags as well, provided the tag is visible the pipeline is able to determine the 6-DOF pose of the object without any depth data.</p>
-<br> -->
-
-# Welcome
-
-**Hello world**, this is my first Jekyll blog post.
-
-I hope you like it!
+<br>
 
 ![test image](/assets/images/projects/pancake/pancake_flip.jpg)
 
-<!-- <p>Once the pancake is put onto the griddle, the perception pipeline begins counting the bubbles that appear on the pancake's surface, much like a human would determine when it's time to flip the pancake.</p>
+<p>Once the pancake is put onto the griddle, the perception pipeline begins counting the bubbles that appear on the pancake's surface, much like a human would determine when it's time to flip the pancake.</p>
 <br>
 
 <p>This perception pipeline is integrated into ROS Noetic, which controls the arm using the MoveIt! control package. Motion planning is accomplished by specifying a target pose and using an RRT to plan a set of joint states that bring the robot to the pose while abiding by planning scene constraints (the table, the camera, etc).</p>
 <br>
 
 <p>Final results yield a program that is able to successfully make pancakes auntonomously with high rates of success. Future work may involve adding toppings, or flipping the pancake in the air with a frying pan rather than a spatula.</p>
-<br> -->
+<br>
