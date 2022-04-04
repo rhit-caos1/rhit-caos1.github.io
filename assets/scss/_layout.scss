@@ -170,7 +170,9 @@
 	}
 
 	.container {
-		max-width: 70%;
+		@media (min-width: $breakpoint-medium){
+			max-width: 70%;
+		}
 
 	}
 
