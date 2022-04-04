@@ -33,8 +33,9 @@ youtubeId: BBnZKu9_Neg
 {% include youtubePlayer.html id=page.youtubeId %}
 <br>
 
-<p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about.
+<p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about. </p>
 <br>
+<p>
 However, in practice, dynamic gesture recognition is a surprisingly difficult task, which I approach in this project. Starting as a total beginner in deep learning, I experimented with and implimented multiple common methods of recognizing dynamic hand gestures.</p>
 <br>
 
@@ -42,23 +43,28 @@ However, in practice, dynamic gesture recognition is a surprisingly difficult ta
 <p>Time-series data struggles with a fundemental challenge in live inference tasks - that is, the problem of segmentation. In a live video stream, there's no definite beginning or end of the gesture, and the time the gesture takes to be performed can be variable.</p>
 <br>
 <p>
-Various solutions to this temporal classificaion problem exist in the deep learning space, most prominently recurrent neural networks (RNNs) which take multiple inputs - a more traditional input for a CNN layer, and a previous state of the RNN. This is used in models such as LTSMs, and specific loss functions have been developed for use with these networks, such as CTC: Connectionist Temporal Classification loss, all of which were experimented with in this project.</p>
+Various solutions to this temporal classificaion problem exist in the deep learning space, most prominently recurrent neural networks (RNNs) which take multiple inputs - a more traditional input for a CNN layer, and a previous state of the RNN. This is used in models such as LTSMs, wherein memory of previous states is kept, and specific loss functions have been developed for use with these networks, such as CTC: Connectionist Temporal Classification loss, all of which were experimented with in this project.</p>
+<br>
+
+** 3D Convolutional Neural Network Experiments
+
 <br>
 
 <p>
 Two different 3DCNNs, used for classifying video rather than a 2DCNN which is used on images, were implimented on Pytorch and trained on the nvGesture dataset. The two networks that were implimented were <a href="https://arxiv.org/abs/1412.0767" target="_blank"><u>C3D</u> </a> and <a href="https://arxiv.org/pdf/1711.11248.pdf" target="_blank"><u>Resnet 2+1d</u></a>. Both networks extract spatiotemporal features, useful for classifying gestures.</p>
-
 <br>
 
 <p>
 While using C3D to emulate the results in a <a href="https://research.nvidia.com/sites/default/files/pubs/2016-06_Online-Detection-and/NVIDIA_R3DCNN_cvpr2016.pdf" target="_blank"><u>2016 paper by NVIDIA</u></a> to classify gestures in the nvGesture dataset yielded training results were not as expected, this was still a great introduction to Pytorch by attempting to solve a difficult problem. </p> <br>
 
-<p> Additionally, a parallelized 1DCNN was implimented to classify dynamic hand gestures in the <a href="http://www-rech.telecom-lille.fr/shrec2017-hand/" target="_blank"><u>DHG-14 dataset</u></a>, using the XYZ coordaintes of skeletal points on a hand as detected through softwares such as Mediapipe. This included a real-time infrence wrapper around <a href="https://github.com/guillaumephd/deep_learning_hand_gesture_recognition" target="_blank"><u>this network</u></a>. While training and validation accuracies were strong, this suffers from the same segmentation problem as before. </p>
+** 1D Parallelized Convolutional Neural Network <br>
 
+<p> Additionally, a parallelized 1DCNN was implimented to classify dynamic hand gestures in the <a href="http://www-rech.telecom-lille.fr/shrec2017-hand/" target="_blank"><u>DHG-14 dataset</u></a>, using the XYZ coordaintes of skeletal points on a hand as detected through softwares such as Mediapipe. This included a real-time infrence wrapper around <a href="https://github.com/guillaumephd/deep_learning_hand_gesture_recognition" target="_blank"><u>this network</u></a>. While training and validation accuracies were strong, this suffers from the same segmentation problem as before. </p>
 <br>
 
-<p>
+** 2D Convolutional Neural Network <br>
 
+<p>
 Finally, a dataset of static images of hands in an infrared camera was used to classify static gestures from a <a href="https://www.kaggle.com/gti-upm/leapgestrecog" target="_blank"><u>leap motion camera</u></a>. Given the nature of the images, this can be approximated by depth data too, with background removal. A 2D CNN was implimented in Pytorch, with parsing of the dataset files courtesy of <a href="https://www.kaggle.com/kageyama/keras-hand-gesture-recognition-cnn/notebook" target="_blank"><u>kaggle</u></a>. The implimented classifier works on single frames in a video stream, and is accurate enough to achieve high performance in real time with a framerate of 30 FPS.
 
 </p> <br>
