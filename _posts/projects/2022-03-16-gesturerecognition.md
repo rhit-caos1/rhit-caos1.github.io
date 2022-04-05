@@ -31,13 +31,10 @@ youtubeId: BBnZKu9_Neg
 
 
 {% include youtubePlayer.html id=page.youtubeId %}
+## Controlling a Drone Via Gesture
 
-<p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about. </p>
+<p>Gestures are a common and especially alluring method of human-computer interaction. In this project, I experiment with multiple manners of detecting hand gestures within a video stream. </p>
 <br>
-<p>
-However, in practice, dynamic gesture recognition is a surprisingly difficult task, which I approach in this project. Starting as a total beginner in deep learning, I experimented with and implemented multiple common methods of recognizing dynamic hand gestures.</p>
-<br>
-
 
 <p>Time-series data struggles with a fundamental challenge in live inference tasks - that is, the problem of segmentation. In a live video stream, there's no definite beginning or end of the gesture, and the time the gesture takes to be performed can be variable.</p>
 <br>
@@ -52,7 +49,10 @@ Two different 3DCNNs, used for classifying video rather than a 2DCNN which is us
 <br>
 
 <p>
-While using C3D to emulate the results in a <a href="https://research.nvidia.com/sites/default/files/pubs/2016-06_Online-Detection-and/NVIDIA_R3DCNN_cvpr2016.pdf" target="_blank"><u>2016 paper by NVIDIA</u></a> to classify gestures in the nvGesture dataset yielded training results were not as expected, this was still a great introduction to Pytorch by attempting to solve a difficult problem. </p> <br>
+Here, these networks (principally C3D) were used to emulate the results in a <a href="https://research.nvidia.com/sites/default/files/pubs/2016-06_Online-Detection-and/NVIDIA_R3DCNN_cvpr2016.pdf" target="_blank"><u>2016 paper by NVIDIA</u></a> to classify gestures in the nvGesture dataset, a dataset with 25 loosely segmented classes of gestures over 1050 videos. The spatiotemporal features from the neural networks were then inputted into a LSTM layer before classification. Here, the 3D convolutional neural networks yielded training results were not as expected, this was still a great introduction to Pytorch by attempting to solve a difficult problem. </p> <br>
+
+![Tensorboard results for experiments on the nvGesture dataset](/assets/images/projects/gesture/nvgesture_tensorboard.png)
+
 
 ### 1D Parallelized Convolutional Neural Network <br>
 
@@ -63,8 +63,9 @@ While using C3D to emulate the results in a <a href="https://research.nvidia.com
 
 <p>
 Finally, a dataset of static images of hands in an infrared camera was used to classify static gestures from a <a href="https://www.kaggle.com/gti-upm/leapgestrecog" target="_blank"><u>leap motion camera</u></a>. Given the nature of the images, this can be approximated by depth data too, with background removal. A 2D CNN was implemented in Pytorch, with parsing of the dataset files courtesy of <a href="https://www.kaggle.com/kageyama/keras-hand-gesture-recognition-cnn/notebook" target="_blank"><u>kaggle</u></a>. The implemented classifier works on single frames in a video stream, and is accurate enough to achieve high performance in real time with a framerate of 30 FPS.
-
 </p> <br>
+
+![An infrared image from the dataset](/assets/images/projects/gesture/dataset_image.png)
 
 <p>
 Controlling the Drone </p> <br>

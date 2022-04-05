@@ -24,8 +24,13 @@ images:
   - image:
     url: "/assets/images/projects/pancake/pancake_flip.jpg"
     alt: "A finished pancake deposited onto a plate"
+
+youtubeId: 0hqedCQbExo
 ---
 
+
+
+{% include youtubePlayer.html id=page.youtubeId %}
 
 <p>In this project, a Franka Emika Panda robot arm was programmed to autonomously cook pancakes.</p>
 <br>
