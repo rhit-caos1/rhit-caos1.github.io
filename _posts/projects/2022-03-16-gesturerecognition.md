@@ -11,7 +11,7 @@ project:
   type: "Jekyll"
   url: "https://github.com/javtges/dronegesturecontrol"
   logo: "/assets/images/projects/gesture/fist_gesture.png"
-  tech: "Deep Learning, Computer Vision, Pytorch"
+  tech: "Deep Learning, Computer Vision, Python, Pytorch, Tensorflow"
 
 
 images:

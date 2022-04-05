@@ -10,7 +10,7 @@ project:
   title: "Tactile Texture Classification"
   type: "Jekyll"
   logo: "/assets/images/projects/texture/setup.png"
-  tech: "Tactile Sensing, Machine Learning, Research"
+  tech: "Tactile Sensing, Machine Learning, Python, Research"
 
 youtubeID: TPY07R9Mu50
 ---
