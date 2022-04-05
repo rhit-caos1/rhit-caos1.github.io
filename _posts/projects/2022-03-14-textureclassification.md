@@ -25,7 +25,10 @@ This project introduces a novel sensor and corresponding method to classify tact
 
 Additionally, a textural dataset was developed, consisting of eleven classes of both similar and varying textures. Multiple classifiers were used to compare with the existing literature. The best performing were found using PCA, with 99.8% test accuracy for Support Vector Machines, and 99.7% for Extra Trees and Random Forest Classifiers. Additionally, an Extra Trees Classifier using manual feature selection achieves 76.6% accuracy on only 10 milliseconds of sampling time. <br><br>
 
-![Textures Used](/assets/images/projects/texture/textures.png)
+![Textures Used](/assets/images/projects/texture/texture_dataset.png)
+<center><h2>The textures in the dataset. Top (left to right): vinyl fake leather, smooth & rough finished polypropylene, cotton denim, canvas, polyester cloth. Bottom (left to right): acrylic, balsa wood, felt, sandpaper, cork
+</h2></center>
+
 
 These results match and exceed the current state-of-art performances while using less training data on a similar number of classes, while using only two sensing modalities. <br><br>
 
