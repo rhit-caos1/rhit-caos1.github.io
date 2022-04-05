@@ -56,3 +56,5 @@ youtubeId: 0hqedCQbExo
 
 ![A finished pancake deposited onto a plate](/assets/images/projects/pancake/pancake_flip2.jpg)
 
+<br><br>
+

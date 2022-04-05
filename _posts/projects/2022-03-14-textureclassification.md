@@ -29,7 +29,7 @@ Additionally, a textural dataset was developed, consisting of eleven classes of 
 <center><h2>The textures in the dataset. See report for full list of materials</h2></center>
 
 
-These results match and exceed the current state-of-art performances while using less training data on a similar number of classes, while using only two sensing modalities. <br><br>
+These results match and exceed the current state-of-art performances while using a third or less training data on a similar set of classes, while using an inexpensive COTS sensor with two channels, as opposed to similar works which almost universally use sensors that are either 1. Custom, without instructions, 2. Expensive, or 3. Have many more input channels. <br><br>
 
 ### More Information
 
