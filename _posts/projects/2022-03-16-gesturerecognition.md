@@ -31,7 +31,6 @@ youtubeId: BBnZKu9_Neg
 
 
 {% include youtubePlayer.html id=page.youtubeId %}
-## Controlling a Drone Via Gesture
 
 <p>Gestures are a common and especially alluring method of human-computer interaction. In this project, I experiment with multiple manners of detecting hand gestures within a video stream. </p>
 <br>
@@ -65,7 +64,7 @@ Here, these networks (principally C3D) were used to emulate the results in a <a 
 Finally, a dataset of static images of hands in an infrared camera was used to classify static gestures from a <a href="https://www.kaggle.com/gti-upm/leapgestrecog" target="_blank"><u>leap motion camera</u></a>. Given the nature of the images, this can be approximated by depth data too, with background removal. A 2D CNN was implemented in Pytorch, with parsing of the dataset files courtesy of <a href="https://www.kaggle.com/kageyama/keras-hand-gesture-recognition-cnn/notebook" target="_blank"><u>kaggle</u></a>. The implemented classifier works on single frames in a video stream, and is accurate enough to achieve high performance in real time with a framerate of 30 FPS.
 </p> <br>
 
-![An infrared image from the dataset](/assets/images/projects/gesture/dataset_image.png)
+![An infrared image from the dataset](/assets/images/projects/gesture/fist_gesture.png)
 
 <p>
 Controlling the Drone </p> <br>
