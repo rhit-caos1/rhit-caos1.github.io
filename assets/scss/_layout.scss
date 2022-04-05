@@ -109,7 +109,7 @@
 		&:before {
 			content: "View Project";
 			color: $color-white;
-			@extend .h3;
+			@extend .h2;
 			font-weight: 800;
 			position: absolute;
 			top: 50%;
@@ -211,7 +211,7 @@
 		}
 	}
 
-	.h3 {
+	.h2 {
 		margin: 3rem 0 .5rem;
 
 		&:first-of-type {
@@ -253,7 +253,7 @@
 		display: inline-block;
 
 		&:hover {
-			h3:after {
+			h2:after {
 				visibility: visible;
 				-webkit-transform: scaleX(1);
 				transform: scaleX(1);
@@ -336,7 +336,7 @@
 		}
 	}
 
-	h3 {
+	h2 {
 		display: inline-block;
 		font-size: 1.8rem;
 		position: relative;
@@ -401,6 +401,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	max-width: 100%;
 	max-height: 100%;
+	max-width: 100%;
   }

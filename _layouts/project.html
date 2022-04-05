@@ -13,15 +13,15 @@
 		<section class="project">
 			<div class="container">
 				<!-- <article> -->
-				<span class="h3">Project Title & GitHub Link</span>
+				<span class="h2">Project Title & GitHub Link</span>
 				<h1>
 					<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 				</h1>
 				<div class="project-meta">
-					<span class="h3">Technologies</span>
+					<span class="h2">Technologies</span>
 					<p>{{ page.project.tech }}</p>
 				</div>
-				<span class="h3">Project</span>
+				<span class="h2">Project</span>
 				{{ content }}
 					
 				<!-- </article> -->
@@ -40,14 +40,14 @@
 			<div class="container">
 				{% if page.previous and page.previous.categories contains "projects" %}
 				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
-					<span class="h3">Previous</span>
-					<h3>{{ page.previous.project.title }}</h3>
+					<span class="h2">Previous</span>
+					<h2>{{ page.previous.project.title }}</h2>
 				</a>
 				{% endif %}
 				{% if page.next and page.next.categories contains "projects" %}
 				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
-					<span class="h3">Next</span>
-					<h3>{{ page.next.project.title }}</h3>
+					<span class="h2">Next</span>
+					<h2>{{ page.next.project.title }}</h2>
 				</a>
 				{% endif %}
 			</div>
