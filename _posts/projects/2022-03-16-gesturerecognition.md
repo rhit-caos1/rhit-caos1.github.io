@@ -66,8 +66,7 @@ Finally, a dataset of static images of hands in an infrared camera was used to c
 
 ![An infrared image from the dataset](/assets/images/projects/gesture/fist_gesture.png)
 
-<p>
-Controlling the Drone </p> <br>
+### Controlling the Drone
 
 <p>
 This project uses a Dji Tello Edu drone, as it provides an easy-to-interface software development kit. Commands that can be sent to the drone are listed in the <a href="https://djitellopy.readthedocs.io/en/latest/tello/" target="_blank"> <u>SDK documentation</u></a>. Each gesture will correspond to a movement in this SDK. </p> <br>
