@@ -15,7 +15,7 @@
 
 .logo {
 	float: left;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	font-weight: 600;
 	margin: 0;
 	line-height: 1;
@@ -26,6 +26,7 @@
 
 	a {
 		@extend .logo;
+		font-size: 1.8rem;
 		line-height: 1em;
 		display: inline-block;
 		text-decoration: none;
