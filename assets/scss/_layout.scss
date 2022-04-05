@@ -383,25 +383,25 @@
 }
 
 
-.embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+// .embed-container {
+// 	position: relative;
+// 	padding-bottom: 56.25%;
+// 	height: 0;
+// 	overflow: hidden;
+// 	margin-left: auto;
+// 	margin-right: auto;
 
-	// @media (min-width: $breakpoint-medium){
-	// 	max-width: 70%;
-	// 	max-height: 70%;
-	// }
+// 	// @media (min-width: $breakpoint-medium){
+// 	// 	max-width: 70%;
+// 	// 	max-height: 70%;
+// 	// }
 
-  }
+//   }
   
-  .embed-container iframe, .embed-container object, .embed-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	max-height: 100%;
-	max-width: 100%;
-  }
+//   .embed-container iframe, .embed-container object, .embed-container embed {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	max-height: 100%;
+// 	max-width: 100%;
+//   }
