@@ -26,6 +26,11 @@
 
 	a {
 		@extend .logo;
+		line-height: 1em;
+		display: inline-block;
+		text-decoration: none;
+		padding: 120px;
+		margin: 42px;
 	}
 }
 
