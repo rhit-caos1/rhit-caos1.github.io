@@ -403,11 +403,4 @@
 	left: 0;
 	max-height: 100%;
 	max-width: 100%;
-
-	@media (min-width: $breakpoint-medium){
-		max-width: 70%;
-		max-height: 70%;
-		margin-left: auto;
-		margin-right: auto;
-	}
   }
