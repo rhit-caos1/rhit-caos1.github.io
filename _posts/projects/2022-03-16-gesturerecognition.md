@@ -47,8 +47,6 @@ Various solutions to this temporal classification problem exist in the deep lear
 
 ### 3D Convolutional Neural Network Experiments
 
-<br>
-
 <p>
 Two different 3DCNNs, used for classifying video rather than a 2DCNN which is used on images, were implemented on Pytorch and trained on the nvGesture dataset. The two networks that were implemented were <a href="https://arxiv.org/abs/1412.0767" target="_blank"><u>C3D</u> </a> and <a href="https://arxiv.org/pdf/1711.11248.pdf" target="_blank"><u>Resnet 2+1d</u></a>. Both networks extract spatiotemporal features, useful for classifying gestures.</p>
 <br>
