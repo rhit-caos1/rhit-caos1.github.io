@@ -31,7 +31,6 @@ youtubeId: BBnZKu9_Neg
 
 
 {% include youtubePlayer.html id=page.youtubeId %}
-<br>
 
 <p>Gestures are a common and especially alluring method of human-computer interaction. For decades media has depicted science-fictional computer wizards manipulating computers and robots with a swipe of a hand, as if a digital interface was tangible and could be grabbed and dragged about. </p>
 <br>
