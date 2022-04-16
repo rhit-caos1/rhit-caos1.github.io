@@ -12,7 +12,6 @@ project:
   logo: "/assets/images/projects/texture/setup.png"
   tech: "Tactile Sensing, Machine Learning, Python, Research"
 
-youtubeID: TPY07R9Mu50
 ---
 
 ### Abstract
@@ -34,12 +33,12 @@ These results match and exceed the current state-of-art performances while using
 
 ### More Information
 
-A recording of the corresponding presentation is shown below. For even more information, <a href="https://drive.google.com/file/d/1u7AozTrO2Hw2sq41u9TIP8lyHH0yUuEb/view?usp=sharing" target="_blank"><u>this report</u></a> provides more detail on the implementation, novelty, and more. <br><br>
-
-{% include youtubePlayer.html id=page.youtubeId %}
+Click <a href="https://youtu.be/TPY07R9Mu50" target="_blank"><u>here</u></a> to watch the corresponding presentation for this project. For even more information, <a href="https://drive.google.com/file/d/1u7AozTrO2Hw2sq41u9TIP8lyHH0yUuEb/view?usp=sharing" target="_blank"><u>this report</u></a> provides more detail on the implementation, novelty, and more. <br><br>
 
 <br><br>
 
 ### Future Work
 
 Future work for this project includes optimizing the detection speed of the sensor and expanding the potential dataset, using Active Learning methods to detect features faster or to learn unfamiliar textures. Additionally, we intend to experiment with different cartridge transducer types and tips to increase resolution and reduce wear on the material. This future work is with the intention of preparing the research for publication.
+
+<br><br>

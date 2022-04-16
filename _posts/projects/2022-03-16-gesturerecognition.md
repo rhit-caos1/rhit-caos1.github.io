@@ -25,8 +25,7 @@ images:
     url: "/assets/images/projects/gesture/drone.png"
     image:
 
-# youtubeId: BBnZKu9_Neg
-youtubeID: TPY07R9Mu50
+youtubeId: BBnZKu9_Neg
 ---
 
 
