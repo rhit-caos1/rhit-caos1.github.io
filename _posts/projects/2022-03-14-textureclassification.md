@@ -29,7 +29,8 @@ Additionally, a textural dataset was developed, consisting of eleven classes of 
 <center><h2>The textures in the dataset. See report for full list of materials</h2></center>
 
 
-These results match and exceed the current state-of-art performances while using a third or less training data on a similar set of classes, while using an inexpensive COTS sensor with two channels, as opposed to similar works which almost universally use sensors that are either 1. Custom, without instructions, 2. Expensive, or 3. Have many more input channels. <br><br>
+These results match and exceed the current state-of-art performances while using a third or less training data on a similar set of classes, while using an inexpensive COTS sensor with two channels, as opposed to similar works which almost universally use sensors that are either 1. Custom, without instructions, 2. Expensive, or 3. Have many more input channels.<br><br>
+
 
 ### More Information
 
@@ -39,3 +40,6 @@ A recording of the corresponding presentation is shown below. For even more info
 
 <br><br>
 
+### Future Work
+
+Future work for this project includes optimizing the detection speed of the sensor and expanding the potential dataset, using Active Learning methods to detect features faster or to learn unfamiliar textures. Additionally, we intend to experiment with different cartridge transducer types and tips to increase resolution and reduce wear on the material. This future work is with the intention of preparing the research for publication.
