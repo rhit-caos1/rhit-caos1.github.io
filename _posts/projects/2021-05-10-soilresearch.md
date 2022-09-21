@@ -10,7 +10,7 @@ project:
   title: "Soil Saturation Controller"
   type: "Jekyll"
   url: "https://github.com/javtges/CEES-Automated-Saturation-System"
-  logo: "/assets/images/projects/soil_70.jpg"
+  logo: "/assets/images/projects/soil_50.jpg"
   tech: "Python, OpenCV, Earthquake Simulation"
 
 youtubeId: k6XsQc-nGOI
