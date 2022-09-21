@@ -10,7 +10,7 @@ project:
   title: "Soil Saturation Controller"
   type: "Jekyll"
   url: "https://github.com/javtges/CEES-Automated-Saturation-System"
-  logo: "/assets/images/projects/soil.jpg"
+  logo: "/assets/images/projects/soil_70.jpg"
   tech: "Python, OpenCV, Earthquake Simulation"
 
 youtubeId: k6XsQc-nGOI
@@ -31,6 +31,10 @@ youtubeId: k6XsQc-nGOI
 
 ![A picture of a vacuum chamber for testing. Voltage-controlled valve is out-of-frame.](/assets/images/projects/soil.jpg)
 <center><h2>A picture of a vacuum chamber for testing. Voltage-controlled valve is out-of-frame.</h2></center>
+
+{% include youtubePlayer.html id=page.youtubeId %}
+<center><h2>Video feed after background subtraction is overlaid over the system. A cropped field of view is used for increased detection accuracy.</h2></center>
+
 
 
 <br><br>
