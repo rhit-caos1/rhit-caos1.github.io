@@ -130,7 +130,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 <p>Using an AprilTag, I then perform a set of planar sweeps to cover the parameter space for the leg. It results in a lookup table as shown below - each dot represents a combination of motor commands and the inplane displacement of the leg from the origin <code>(0,0)</code>, when the motors are at their neutral location. 
   In the full lookup table, compiled over multiple hours and ~12 complete inplane sweeps covering the parameter space, it's visually apparent that <strong>1.</strong> the HSA properties remain reasonably consistent over time, and <strong>2.</strong> HSA displacement at a given set of motor values is reasonably
-  repeatable, regardless of the actuator's strain rate or direction of movement.
+  repeatable, regardless of the actuator's strain rate or direction of movement. The resulting dimensions of the lookup table then define the joint limits in the simulation's URDF file.
 </p>
 <br>
 <!-- GIF / image of the lookup table -->
@@ -147,10 +147,29 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 
 
-### Sim-to-Real Transfer
+### Learning and Optimizing Gaits - in Simulation and Real Life
 
-<br><br>
+<p>At long last, we're ready to perform sim-to-real transfer. Using bilinear interpolation, I demonstrated an elliptical gait - not learned, though derived from my lookup table - that exceeds the hand-tuned gait speed
+  demonstrated in <i>Soft Matter</i> by ~25%.
+</p>
+<br>
 
+<!-- Video of robot walking quickly -->
+<p> This is corroborated in the simulation results, where we can observe the robot learning significantly in only hundreds of rollouts, sometimes fewer. Initial results showed nearly 5x improvement in gait speed, largely
+  due to the "time-warping" functionality of the policy, effectively walking far faster than the zero policy gait.
+</p>
+<br>
+
+<!-- Video of robot starting out walking, and then video of robot walking FAST -->
+<p>However, this type of gait isn't reasonable to run on the real robot - the HSAs don't move this fast in real life. Therefore, current work focuses on slowing down gaits while still generating geometric optimization.
+  An example is shown below in simulation, we we improve a slowed-down gait's speed (<i>that more closely resembles how the robot walks in real-life</i>) by a factor of three.</p>
+<br>
+
+<!-- Video of robot walking faster with a more reasonable gait. -->
+
+<p>Final results, aiming to demonstrate a complete sim-to-real gait pipeline, are still in production with the intention of preparing a conference submission! An absolute massive thank-you to my advisors Ryan Truby
+  and Matt Elwin, along with Pranav Kaarthik, Francesco Sanchez from the Robotic Matter Lab. From Todd Murphey's Lab, Jake Ketchum, Muchen Sun, and Thomas Berrueta were all great resources and collaborators!
+</p>
 
 <br><br>
 
