@@ -9,7 +9,7 @@ meta:
 project:
   title: "Bringing Robotics to the Public"
   type: "Jekyll"
-  url: "https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2022/bringing-robotics-to-the-public.html"
+  url: "https://github.com/javtges/soft_quadruped"
   logo: "/assets/images/projects/outreach/bringing-robotics-to-the-public.jpg"
   tech: "Soft Robotics, Reinforcement Learning"
 ---
