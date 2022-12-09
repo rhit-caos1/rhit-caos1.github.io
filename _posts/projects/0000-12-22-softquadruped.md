@@ -22,8 +22,7 @@ I had the incredible fortune to be advised by Professors <a href="https://www.mc
 and <a href="https://robotics.northwestern.edu/people/profiles/faculty/elwin-matt.html" target="_blank"><u>Matthew Elwin</u></a>, and to collaborate with Professor
 <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/murphey-todd.html" target="_blank"><u>Todd Murphey's</u></a> lab.</p> 
 
-
-<!-- Maybe put a picture here again of the robot, cover art for Soft Matter? -->
+<br>
 
 ![Soft Matter Cover](/assets/images/projects/final/hsa_robot_beach.png)
 <center><h2>Cover photo from a themed collection on soft robotics, <i>Soft Matter</i></h2></center>
@@ -41,7 +40,10 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 <p>An HSA is composed of two of these auxetic cylinders. When paired together, two HSA pairs can create a structure that can expand, contract, bend, and twist.</p>
 <br>
+
 <!-- put a picture here of an HSA -->
+![HSA Movements](/assets/images/projects/final/hsa_robot_movements.png)
+<center><h2>Kaarthik et al., “Motorized, untethered soft robots via 3D printed auxetics”, <i>Soft Matter</i>, 2022.</h2></center>
 
 <p>I joined the Robotic Matter Lab when Pranav Kaarthik was working with HSAs to create an quadruped. Using a hand-defined gait, he demonstrated untethered locomotion for over an hour, while carrying a payload of 1.5kg. 
   This work appeared in "Motorized, untethered soft robots via 3D printed auxetics", accepted to <i>Soft Matter</i> in the Fall, and was the cover art for a themed collection on soft robotics!
@@ -64,12 +66,15 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 ### Initial Approach: Online Policy Gradient Estimation
 
-<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from PETER STONE PAPER.
+<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from <i>Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion</i>, 
+  one of the earliest examples of learned legged locomotion from 2004.
   The intention for this method is to use the simplest learning architecture possible, and avoid the complexities of modeling & simulating such a complex dynamical system.
 </p>
 <br>
 
 <!-- Throw in peter stone block diagram -->
+![Peter Stone Block Diagram](/assets/images/projects/final/peterstone.png)
+<center><h2>Nate Kohl and Peter Stone, “Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion”, ICRA, 2004.</h2></center>
 
 <p>Here, I parameterized the values in the hand-tuned policy, while preserving the gait's structure. However, it was found that given the parameter space we were searching, the system was very brittle with respect to parameter
   perturbations. While it is certainly possible to have learned a more optimal gait using this method (<i>and should I have had more time, I would've loved to explore further!</i>), the timescales required (<i>and therefore the number of motors and HSAs printed</i>) was prohibitive. Thus, I led the initiative to pivot to a sim-to-real approach to learn gaits on this system.
