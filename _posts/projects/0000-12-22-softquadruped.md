@@ -156,9 +156,9 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <!-- GIF / image of the lookup table -->
 
 
-| <h2>Animated Lookup Table</h2>  | <h2>Full Lookup Table</h2> |
+| Animated Lookup Table  | Full Lookup Table |
 | ------------- | ------------- |
-| ![](/assets/images/projects/final/lut_animation.gif)  | ![](/assets/images/projects/final/lut_animation.gif)  |
+| ![](/assets/images/projects/final/lut_animation.gif)  | ![](/assets/images/projects/final/interpolated_lut.png)  |
 
 
 <p>Finally, I perform bilinear interpolation to go from an arbitrary set of XY values in the leg's coordinate frame, to a set of motor commands that most closely replicate it. Appending this to the end of the PMTG pipeline allows translation of simulated policies into real life.</p>
