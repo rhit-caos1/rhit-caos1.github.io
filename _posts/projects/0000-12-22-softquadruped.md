@@ -24,6 +24,11 @@ and <a href="https://robotics.northwestern.edu/people/profiles/faculty/elwin-mat
 
 
 <!-- Maybe put a picture here again of the robot, cover art for Soft Matter? -->
+
+![Soft Matter Cover](/assets/images/projects/final/hsa_robot_beach.png)
+<center><h2>Cover photo from a themed collection on soft robotics, <i>Soft Matter</i></h2></center>
+
+
 <br>
 
 ### Background: Gait Optimization for Soft Systems
