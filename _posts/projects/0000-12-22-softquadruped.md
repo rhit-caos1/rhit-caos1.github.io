@@ -7,7 +7,7 @@ meta:
   keywords: "Soft Robotics, Reinforcement Learning"
 
 project:
-  title: "Bringing Robotics to the Public"
+  title: "Reinforcement Learning for Soft Robots"
   type: "Jekyll"
   url: "https://github.com/javtges/soft_quadruped"
   logo: "/assets/images/projects/outreach/bringing-robotics-to-the-public.jpg"
@@ -17,7 +17,7 @@ project:
 
 
 
-<p>This spring, I had the privilege to perform some outreach at three local events: a <i>Robot Block Party</i> at Chicago’s Museum of Science and Industry, a <i>Career Day for Girls</i> in the Chicago area, and a <i>Biotech Nexus</i> event, attended by high-schoolers from Lindblom Math and Science Academy."</p> 
+<p>This is my MSR Final Research Project. It was conducted in the Spring and Fall quarters of 2022, under the incredible advisory of Professors Ryan Truby and Matthew Elwin, and in collaboration with Professor Todd Murphey's lab.</p> 
 
 <br>
 
