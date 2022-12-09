@@ -10,7 +10,7 @@ project:
   title: "Reinforcement Learning for Soft Robots"
   type: "Jekyll"
   url: "https://github.com/javtges/soft_quadruped"
-  logo: "/assets/images/projects/outreach/bringing-robotics-to-the-public.jpg"
+  logo: "/assets/images/projects/final/hsa_robot.jpg"
   tech: "Soft Robotics, Reinforcement Learning"
 ---
 
@@ -21,7 +21,20 @@ project:
 
 <br>
 
-<p>I was able to demonstrate three projects at these events: <a href="https://javtges.github.io/pancakerobot/" target="_blank"><u>Robotic Pancake Chef</u></a>, <a href="https://javtges.github.io/textureclassification/" target="_blank"><u>Tactile Texture Classification</u></a>, and <a href="https://javtges.github.io/gesturerecognition/" target="_blank"><u>Deep Learning for Gesture Recognition</u></a>. Check out Northwestern MSR's 'Inside Our Program' <a href="https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2022/bringing-robotics-to-the-public.html" target="_blank"><u>article</u></a> with more information, written by <a href="https://www.zarefsky.com/" target="_blank"><u>Marc Zarefsky</u></a>.
+### Background: Gait Optimization for Soft Systems
+
+### Challenges in Controlling Soft Systems
+
+### Initial Approach: Online Policy Gradient Estimation
+
+### Creating a Simulation Environment
+
+### Policies Modulating Trajectory Generators
+
+### Test Fixturing to Capture Dynamics
+
+### Sim-to-Real Transfer
+
 
 </p>
 <br>
