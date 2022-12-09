@@ -42,7 +42,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 <!-- put a picture here of an HSA -->
-![HSA Movements](/assets/images/projects/final/hsa_robot_movements.png){:width="130%"}
+<!-- ![HSA Movements](/assets/images/projects/final/hsa_robot_movements.png) -->
+<img class="img120" src="/assets/images/projects/final/hsa_robot_movements.png"> 
 <center><h2>Kaarthik et al., “Motorized, untethered soft robots via 3D printed auxetics”, <i>Soft Matter</i>, 2022.</h2></center>
 
 <p>I joined the Robotic Matter Lab when Pranav Kaarthik was working with HSAs to create an quadruped. Using a hand-defined gait, he demonstrated untethered locomotion for over an hour, while carrying a payload of 1.5kg. 
@@ -84,7 +85,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 <!-- Picture of Peter Stone results -->
-![Online Learning Results](/assets/images/projects/final/stone_results.png)
+<!-- ![Online Learning Results](/assets/images/projects/final/stone_results.png) -->
 <img class="img80" src="/assets/images/projects/final/stone_results.png"> 
 <center><h2>Results on a per-trial basis, using online policy gradient RL</h2></center>
 <br>
