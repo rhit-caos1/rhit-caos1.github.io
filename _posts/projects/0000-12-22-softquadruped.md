@@ -85,6 +85,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 <!-- Picture of Peter Stone results -->
 ![Online Learning Results](/assets/images/projects/final/stone_results.png)
+<img class="img80" src="/assets/images/projects/final/stone_results.png"> 
 <center><h2>Results on a per-trial basis, using online policy gradient RL</h2></center>
 <br>
 
