@@ -61,6 +61,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 <p>Additionally, as soft robots rely on material deformation to move, the lifespan of soft actuators is by definition limited by its material properties. This leads to actuation properties that vary over time.
 </p>
+
+
 <!-- put a picture here of a broken HSA -->
 <br>
 
@@ -81,6 +83,11 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 </p>
 <br>
 
+<!-- Picture of Peter Stone results -->
+![Online Learning Results](/assets/images/projects/final/stone_results.png)
+<center><h2>Results on a per-trial basis, using online policy gradient RL</h2></center>
+<br>
+
 ### Creating a Simulation Environment
 
 <p>I created a simulation environment based off of Pybullet, and made it compatible with OpenAI's Gym workflow, a useful framework for reinforcement learning tasks. The robot modeled in simulation, is defined by a URDF with two joints: a revolute and prismatic joint connected together.</p>
@@ -88,7 +95,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 <!-- Add a gif here of the robot moving its 'hips' around -->
-
+![HSA Robot Moving in Pybullet](/assets/images/projects/final/hsa_pybullet_joints.gif)
+<center><h2>HSA Robot, in Pybullet, moving its joints around</h2></center>
 
 ### Policies Modulating Trajectory Generators
 
@@ -102,6 +110,9 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 </p>
 
 <!-- add PMTG architecture block diagram -->
+![PMTG Block Diagram](/assets/images/projects/final/pmtg_block.png)
+<center><h2>Iscen et al., “Policies Modulating Trajectory Generators”, Conference on Robot Learning (CoRL), 2018.</h2></center>
+
 
 <p>In order to improve the sim-to-real transfer effectiveness, I apply Gaussian noise to each set of simulation inputs, along with applying domain randomization for each rollout, increasing the robustness of the policy.
   Many implementation details are inspired by Linear Policies are Sufficient to Enable Low-Cost Quadrupedal Robots to Traverse Rough Terrain, where the application of residuals, gait time dilation, and domain randomization is
@@ -132,6 +143,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 <!-- a picture of the test fixture -->
+![HSA Test Fixture](/assets/images/projects/final/hsa_cage.png)
+<center><h2>Test fixture for capturing HSA dynamics</h2></center>
 
 <p>Using an AprilTag, I then perform a set of planar sweeps to cover the parameter space for the leg. It results in a lookup table as shown below - each dot represents a combination of motor commands and the inplane displacement of the leg from the origin <code>(0,0)</code>, when the motors are at their neutral location. 
   In the full lookup table, compiled over multiple hours and ~12 complete inplane sweeps covering the parameter space, it's visually apparent that <strong>1.</strong> the HSA properties remain reasonably consistent over time, and <strong>2.</strong> HSA displacement at a given set of motor values is reasonably
@@ -140,10 +153,9 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 <!-- GIF / image of the lookup table -->
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+<h2>Animated Lookup Table</h2>  | <h2>Full Lookup Table</h2>
+:-------------:|:-------------:
+![](/assets/images/projects/final/lut_animation.gif)  |  ![](/assets/images/projects/final/lut_animation.gif)
 
 <p>Finally, I perform bilinear interpolation to go from an arbitrary set of XY values in the leg's coordinate frame, to a set of motor commands that most closely replicate it. Appending this to the end of the PMTG pipeline allows translation of simulated policies into real life.</p>
 <br>
