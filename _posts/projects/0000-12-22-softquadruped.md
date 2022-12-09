@@ -128,9 +128,17 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 <!-- a picture of the test fixture -->
 
-<p>Using an AprilTag, I then perform a set of planar sweeps to cover the parameter space for the leg. It results in a lookup table as shown below - each dot represents a combination of motor commands and the inplane displacement of the leg from the origin <code>(0,0)</code>, when the motors are at their neutral location.</p>
+<p>Using an AprilTag, I then perform a set of planar sweeps to cover the parameter space for the leg. It results in a lookup table as shown below - each dot represents a combination of motor commands and the inplane displacement of the leg from the origin <code>(0,0)</code>, when the motors are at their neutral location. 
+  In the full lookup table, compiled over multiple hours and ~12 complete inplane sweeps covering the parameter space, it's visually apparent that <strong>1.</strong> the HSA properties remain reasonably consistent over time, and <strong>2.</strong> HSA displacement at a given set of motor values is reasonably
+  repeatable, regardless of the actuator's strain rate or direction of movement.
+</p>
 <br>
 <!-- GIF / image of the lookup table -->
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 <p>Finally, I perform bilinear interpolation to go from an arbitrary set of XY values in the leg's coordinate frame, to a set of motor commands that most closely replicate it. Appending this to the end of the PMTG pipeline allows translation of simulated policies into real life.</p>
 <br>
@@ -138,15 +146,10 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <!-- Add image of interpolation if I have time -->
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
 
 ### Sim-to-Real Transfer
 
-<br>
+<br><br>
 
 
 <br><br>
