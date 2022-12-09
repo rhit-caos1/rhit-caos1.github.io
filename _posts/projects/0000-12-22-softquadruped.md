@@ -78,7 +78,32 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 ### Creating a Simulation Environment
 
+<p>I created a simulation environment based off of Pybullet, and made it compatible with OpenAI's Gym workflow, a useful framework for reinforcement learning tasks. The robot modeled in simulation, is defined by a URDF with two joints: a revolute and prismatic joint connected together.</p>
+
+<br>
+
+<!-- Add a gif here of the robot moving its 'hips' around -->
+
+
 ### Policies Modulating Trajectory Generators
+
+<p>To learn a gait in simulation, I use the architecture Policies Modulating Trajectory Generators. This allows the agent to learn a policy for a gait like more 'conventional' reinforcement learning, but allows
+  some prior knowledge to be added to bootstrap the simulation. It takes the form of a periodic Trajectory Generator, which in the original paper, defines the path in space that a robot's foot follows. It's defined by various
+  parameters, which are learned by the policy given an observation.
+</p>
+<br>
+<p>The policy learns additional values, too, residual values that allow the policy to modulate the Trajectory Generator's output based on an observation (Euler angles, in this case). In the original and my implementation, it takes the form of X and Y
+  offsets for each leg. It also learns a <i>time offset</i> value - which modulates the phase of each leg, transitioning the Trajectory Generator into a general-purpose point selection set for each timestep within the simulation.
+</p>
+
+<!-- add PMTG architecture block diagram -->
+
+<p>In order to improve the sim-to-real transfer effectiveness, I apply Gaussian noise to each set of simulation inputs, along with applying domain randomization for each rollout, increasing the robustness of the policy.
+  Many implementation details are inspired by Linear Policies are Sufficient to Enable Low-Cost Quadrupedal Robots to Traverse Rough Terrain, where the application of residuals, gait time dilation, and domain randomization is
+  critical to enable a rigid quadruped to walk and "stumble" through rough terrain without falling over.
+</p>
+<br>
+<p>Following this paper, I also implement a simple linear policy rather than a more complex neural network-based architecture, and use Augmented Random Search to train it. It trains in minutes on CPU, and converges on the order of only hundreds of rollouts.</p>
 
 ### Test Fixturing to Capture Dynamics
 
