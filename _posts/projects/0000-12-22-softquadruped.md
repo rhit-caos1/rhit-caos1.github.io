@@ -109,9 +109,36 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 
-
-
 ### Test Fixturing to Capture Dynamics
+
+<p>In order to enable sim-to-real transfer, I need to tackle the challenge of forward kinematics for the HSA quadruped. I chose to accomplish this in a computationally-efficient way possible, a simple lookup table to approximate the complex mapping
+  between motor inputs and HSA displacement.
+</p>
+<br>
+
+<p>Furthermore, to match the simulation, I constrain leg movement to planar extensions, contractions, and bending. Due to the handed nature of the legs, it means that a given HSA position can be represented by two motor commands,
+  rather than four. Our servos that actuate the HSAs move approximately 180 degrees, so when considering 90 degrees as a nominal value, the parameter vector of motor inputs for each leg ends up being <code>[M, 180-M, N, 180-N]</code>.
+</p>
+<br>
+
+<p>To simulate compliant behavior of the robot's legs under loading conditions similar to walking, I designed a test fixture for a single leg. Preloaded springs on each corner provide a constant force similar to one-quarter
+  of the robot's expected weight, and allow the leg to contract without any resistive force. Extending the leg applies more force to "push the robot up".
+</p>
+<br>
+
+<!-- a picture of the test fixture -->
+
+<p>Using an AprilTag, I then perform a set of planar sweeps to cover the parameter space for the leg. It results in a lookup table as shown below - each dot represents a combination of motor commands and the inplane displacement of the leg from the origin (0,0), when the motors are at their neutral location.</p>
+<br>
+
+<!-- GIF / image of the lookup table -->
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 
 ### Sim-to-Real Transfer
 
