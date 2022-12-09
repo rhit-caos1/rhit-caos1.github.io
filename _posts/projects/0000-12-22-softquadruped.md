@@ -4,14 +4,14 @@ permalink: /:title/
 category: projects
 
 meta:
-  keywords: "Outreach, ROS, Demonstrations"
+  keywords: "Soft Robotics, Reinforcement Learning"
 
 project:
   title: "Bringing Robotics to the Public"
   type: "Jekyll"
   url: "https://www.mccormick.northwestern.edu/robotics/inside-our-program/stories/2022/bringing-robotics-to-the-public.html"
   logo: "/assets/images/projects/outreach/bringing-robotics-to-the-public.jpg"
-  tech: "ROS, Deep Learning, Machine Learning, Computer Vision"
+  tech: "Soft Robotics, Reinforcement Learning"
 ---
 
 
