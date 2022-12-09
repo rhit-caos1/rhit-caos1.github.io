@@ -240,11 +240,38 @@
 			max-width: 40%;
 			margin-bottom: 16px;
 		}
+
+		.img80 {
+			margin-right: auto;
+			margin-left: auto;
+			@media (min-width: $breakpoint-medium){
+				max-width: 80%;
+				margin-bottom: 16px;
+			}
+		}
+		
 	}
 
-
+	.img80 {
+		margin-right: auto;
+		margin-left: auto;
+		@media (min-width: $breakpoint-medium){
+			max-width: 80%;
+			margin-bottom: 16px;
+		}
+	}
+	
 
 	
+}
+
+p > .img80 {
+	margin-right: auto;
+	margin-left: auto;
+	@media (min-width: $breakpoint-medium){
+		max-width: 80%;
+		margin-bottom: 16px;
+	}
 }
 
 .img80 {
@@ -254,8 +281,9 @@
 		max-width: 80%;
 		margin-bottom: 16px;
 	}
-
+	
 }
+
 
 .project-navigation {
 	background: $color-black;
