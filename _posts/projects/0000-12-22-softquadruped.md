@@ -16,8 +16,8 @@ project:
 
 
 
-
-<p>This is my MSR Final Research Project. It was conducted in the Spring and Fall quarters of 2022, under the incredible advisory of Professors Ryan Truby and Matthew Elwin, and in collaboration with Professor Todd Murphey's lab.</p> 
+<!-- Add some links here to their bios / labs -->
+<p>This is my MSR Final Research Project. It was conducted in the Spring and Fall quarters of 2022, within Northwestern's Robotic Matter Lab. I had the incredible fortune to be advised by Professors Ryan Truby and Matthew Elwin, and to collaborate with Professor Todd Murphey's lab.</p> 
 
 <br>
 
