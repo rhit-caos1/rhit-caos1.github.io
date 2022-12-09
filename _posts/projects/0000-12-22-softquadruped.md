@@ -103,7 +103,13 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
   critical to enable a rigid quadruped to walk and "stumble" through rough terrain without falling over.
 </p>
 <br>
-<p>Following this paper, I also implement a simple linear policy rather than a more complex neural network-based architecture, and use Augmented Random Search to train it. It trains in minutes on CPU, and converges on the order of only hundreds of rollouts.</p>
+
+<p>Following this paper, I also implement a simple linear policy rather than a more complex neural network-based architecture, and use Augmented Random Search to train it. It trains in minutes on CPU, and converges on the order of only hundreds of rollouts.
+</p>
+<br>
+
+
+
 
 ### Test Fixturing to Capture Dynamics
 
