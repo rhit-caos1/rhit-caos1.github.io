@@ -194,11 +194,6 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 </p>
 <br>
 
-![Training Plot](/assets/images/projects/final/training.png)
-<center><h2>Plot of training rewards over rollout number</h2></center>
-
-
-
 <img class="img80" src="/assets/images/projects/final/hsa_fastwalk.gif"> 
 <center><h2>Time modulation allows quicker leg movements</h2></center>
 
@@ -208,6 +203,10 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <br>
 
 <!-- Video of robot walking faster with a more reasonable gait. -->
+![Training Plot](/assets/images/projects/final/training.png)
+<center><h2>Plot of training rewards over rollout number</h2></center>
+
+
 ![HSA Robot Moving in Pybullet](/assets/images/projects/final/hsa_slower_optgait.gif)
 <center><h2>Optimized Pybullet gait, ~3x faster than initial policy</h2></center>
 
