@@ -175,19 +175,31 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 </p>
 <br>
 
+![HSA Robot Moving in Pybullet](/assets/images/projects/final/default_gait_slow.gif)
+<center><h2>Closed-loop circular gait in Pybullet</h2></center>
+
+
 <!-- Video of robot walking quickly -->
+![HSA Robot Moving in Pybullet](/assets/images/projects/final/hsa_circle_gait.gif)
+<center><h2>Closed-loop circular gait in real life</h2></center>
+
+
 <p> This is corroborated in the simulation results, where we can observe the robot learning significantly in only hundreds of rollouts, sometimes fewer. Initial results showed nearly 5x improvement in gait speed, largely
   due to the "time-warping" functionality of the policy, effectively walking far faster than the zero policy gait.
 </p>
 <br>
 
 <img class="img80" src="/assets/images/projects/final/hsa_fastwalk.gif"> 
+<center><h2>Time modulation allows quicker leg movements</h2></center>
+
 <!-- Video of robot starting out walking, and then video of robot walking FAST -->
 <p>However, this type of gait isn't reasonable to run on the real robot - the HSAs don't move this fast in real life. Therefore, current work focuses on slowing down gaits while still generating geometric optimization.
   An example is shown below in simulation, we we improve a slowed-down gait's speed (<i>that more closely resembles how the robot walks in real-life</i>) by a factor of three.</p>
 <br>
 
 <!-- Video of robot walking faster with a more reasonable gait. -->
+![HSA Robot Moving in Pybullet](/assets/images/projects/final/hsa_slower_optgait.gif)
+<center><h2>Optimized Pybullet gait, ~3x faster than initial policy</h2></center>
 
 <p>Final results, aiming to demonstrate a complete sim-to-real gait pipeline, are still in production with the intention of preparing a conference submission! An absolute massive thank-you to my advisors Ryan Truby
   and Matt Elwin, along with Pranav Kaarthik, Francesco Sanchez from the Robotic Matter Lab. From Todd Murphey's Lab, Jake Ketchum, Muchen Sun, and Thomas Berrueta were all great resources and collaborators!
