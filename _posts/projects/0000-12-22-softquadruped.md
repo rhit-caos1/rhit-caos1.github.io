@@ -43,7 +43,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 <!-- put a picture here of an HSA -->
 <!-- ![HSA Movements](/assets/images/projects/final/hsa_robot_movements.png) -->
-<img class="img80" src="/assets/images/projects/final/hsa_robot_movements.png"> 
+<img class="img80" src="/assets/images/projects/final/hsa_robot_movements.png" width="1200"> 
 <center><h2>Kaarthik et al., “Motorized, untethered soft robots via 3D printed auxetics”, <i>Soft Matter</i>, 2022.</h2></center>
 
 <p>I joined the Robotic Matter Lab when Pranav Kaarthik was working with HSAs to create an quadruped. Using a hand-defined gait, he demonstrated untethered locomotion for over an hour, while carrying a payload of 1.5kg. 
@@ -69,7 +69,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 ### Initial Approach: Online Policy Gradient Estimation
 
-<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from <i>Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion</i>, 
+<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from <a href="https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/icra04.pdf" target="_blank"><u><i>Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion</i></u></a> .</p>, 
   one of the earliest examples of learned legged locomotion from 2004.
   The intention for this method is to use the simplest learning architecture possible, and avoid the complexities of modeling & simulating such a complex dynamical system.
 </p>
@@ -102,7 +102,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 ### Policies Modulating Trajectory Generators
 
-<p>To learn a gait in simulation, I use the architecture Policies Modulating Trajectory Generators. This allows the agent to learn a policy for a gait like more 'conventional' reinforcement learning, but allows
+<p>To learn a gait in simulation, I use the architecture <a href="https://arxiv.org/abs/1910.02812" target="_blank"><u><i>Policies Modulating Trajectory Generators</i></u></a>. This allows the agent to learn a policy for a gait like more 'conventional' reinforcement learning, but allows
   some prior knowledge to be added to bootstrap the simulation. It takes the form of a periodic Trajectory Generator, which in the original paper, defines the path in space that a robot's foot follows. It's defined by various
   parameters, which are learned by the policy given an observation.
 </p>
@@ -117,12 +117,12 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 
 <p>In order to improve the sim-to-real transfer effectiveness, I apply Gaussian noise to each set of simulation inputs, along with applying domain randomization for each rollout, increasing the robustness of the policy.
-  Many implementation details are inspired by Linear Policies are Sufficient to Enable Low-Cost Quadrupedal Robots to Traverse Rough Terrain, where the application of residuals, gait time dilation, and domain randomization is
+  Many implementation details are inspired by <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9636011" target="_blank"><u><i>Linear Policies are Sufficient to Enable Low-Cost Quadrupedal Robots to Traverse Rough Terrain</i></u></a>, where the application of residuals, gait time dilation, and domain randomization is
   critical to enable a rigid quadruped to walk and "stumble" through rough terrain without falling over.
 </p>
 <br>
 
-<p>Following this paper, I also implement a simple linear policy rather than a more complex neural network-based architecture, and use Augmented Random Search to train it. It trains in minutes on CPU, and converges on the order of only hundreds of rollouts.
+<p>Following this paper, I also implement a simple linear policy rather than a more complex neural network-based architecture, and use <a href="https://arxiv.org/pdf/1803.07055.pdf" target="_blank"><u>Augmented Random Search</u></a> to train it. It trains in minutes on CPU, and converges on the order of only hundreds of rollouts.
 </p>
 <br>
 
