@@ -167,6 +167,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 ![HSA Test Fixture](/assets/images/projects/final/full_diagram.png)
 <center><h2>The full system diagram for running a policy on a real robot</h2></center>
 
+<br>
+
 <!-- Add image of interpolation if I have time -->
 
 
