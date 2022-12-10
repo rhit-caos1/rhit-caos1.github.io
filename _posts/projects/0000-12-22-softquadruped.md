@@ -158,7 +158,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 | Animated Lookup Table  | Full Lookup Table |
 | ------------- | ------------- |
-| <img class="img80" src="/assets/images/projects/final/lut_animation.gif">  | <img class="img80" src="/assets/images/projects/final/interpolated_lut.png">  |
+| <img class="img80" src="/assets/images/projects/final/lut_animation.gif">  | <img class="img80" src="/assets/images/projects/final/interpolate_lut.png">  |
 
 
 <p>Finally, I perform bilinear interpolation to go from an arbitrary set of XY values in the leg's coordinate frame, to a set of motor commands that most closely replicate it. Appending this to the end of the PMTG pipeline allows translation of simulated policies into real life.</p>
@@ -193,6 +193,11 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
   due to the "time-warping" functionality of the policy, effectively walking far faster than the zero policy gait.
 </p>
 <br>
+
+![Training Plot](/assets/images/projects/final/training.png)
+<center><h2>Plot of training rewards over rollout number</h2></center>
+
+
 
 <img class="img80" src="/assets/images/projects/final/hsa_fastwalk.gif"> 
 <center><h2>Time modulation allows quicker leg movements</h2></center>
