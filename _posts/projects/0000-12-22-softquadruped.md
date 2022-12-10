@@ -164,6 +164,9 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 <p>Finally, I perform bilinear interpolation to go from an arbitrary set of XY values in the leg's coordinate frame, to a set of motor commands that most closely replicate it. Appending this to the end of the PMTG pipeline allows translation of simulated policies into real life.</p>
 <br>
 
+![HSA Test Fixture](/assets/images/projects/final/full_diagram.png)
+<center><h2>The full system diagram for running a policy on a real robot</h2></center>
+
 <!-- Add image of interpolation if I have time -->
 
 
