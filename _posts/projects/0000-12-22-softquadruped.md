@@ -181,6 +181,7 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 </p>
 <br>
 
+<img class="img80" src="/assets/images/projects/final/hsa_fastwalk.gif"> 
 <!-- Video of robot starting out walking, and then video of robot walking FAST -->
 <p>However, this type of gait isn't reasonable to run on the real robot - the HSAs don't move this fast in real life. Therefore, current work focuses on slowing down gaits while still generating geometric optimization.
   An example is shown below in simulation, we we improve a slowed-down gait's speed (<i>that more closely resembles how the robot walks in real-life</i>) by a factor of three.</p>
