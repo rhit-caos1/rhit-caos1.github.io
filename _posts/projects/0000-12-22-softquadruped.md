@@ -69,10 +69,8 @@ We print HSAs out of polyurethane-like material, using stereolithography.</p>
 
 ### Initial Approach: Online Policy Gradient Estimation
 
-<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from <a href="https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/icra04.pdf" target="_blank"><u><i>Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion</i></u></a> .</p>, 
-  one of the earliest examples of learned legged locomotion from 2004.
-  The intention for this method is to use the simplest learning architecture possible, and avoid the complexities of modeling & simulating such a complex dynamical system.
-</p>
+<p>These challenges led to a first attempt at reinforcement learning for such a system  - online policy gradient estimation, with methods derived from <a href="https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/icra04.pdf" target="_blank"><u><i>Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion</i></u></a>, one of the earliest examples of learned legged locomotion from 2004.
+  The intention for this method is to use the simplest learning architecture possible, and avoid the complexities of modeling & simulating such a complex dynamical system.</p>
 <br>
 
 <!-- Throw in peter stone block diagram -->
