@@ -1,0 +1,37 @@
+---
+layout: project
+permalink: /:title/
+category: projects
+
+meta:
+  keywords: "Python, CV, Manipulation"
+
+project:
+  title: "Pentheif"
+  type: "Jekyll"
+  url: "https://github.com/shantao/Pentheif"
+  logo: "/assets/images/projects/Pentheif/Pentheif.gif"
+  tech: "ROS, Python, CV, Manipulation"
+
+images:
+  - image:
+    url: "/assets/images/projects/Pentheif/Pentheif.gif"
+    alt: "Making hot chocolate in X6 speed"
+  - image:
+    url: "/assets/images/projects/BotChoco/Choco_CV1.jpg"
+    alt: "Calibration robot arm"
+  - image:
+    url: "/assets/images/projects/BotChoco/Choco_CV2.jpg"
+    alt: "Calibration"
+
+---
+
+## Technologies
+Ros, Python, OpenCV, Manipulation
+
+## Project
+
+<p>In this project, a PincherX 100 robot arm was programmed to autonomously pick up a purple pen in the working space.</p>
+<br>
+
+The robot arm communicate with a computer which provides
