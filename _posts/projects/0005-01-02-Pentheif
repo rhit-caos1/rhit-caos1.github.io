@@ -11,7 +11,7 @@ project:
   type: "Jekyll"
   url: "https://github.com/shantao/Pentheif"
   logo: "/assets/images/projects/Pentheif/Pentheif.gif"
-  tech: "ROS, Python, CV, Manipulation"
+  tech: "Python, CV, Manipulation"
 
 images:
   - image:
