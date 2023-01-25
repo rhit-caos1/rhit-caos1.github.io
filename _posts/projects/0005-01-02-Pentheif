@@ -9,7 +9,7 @@ meta:
 project:
   title: "Pentheif"
   type: "Jekyll"
-  url: "https://github.com/shantao/Pentheif"
+  ## url: "https://github.com/shantao/Pentheif"
   logo: "/assets/images/projects/Pentheif/Pentheif.gif"
   tech: "Python, CV, Manipulation"
 
