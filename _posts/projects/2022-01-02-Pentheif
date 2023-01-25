@@ -16,13 +16,7 @@ project:
 images:
   - image:
     url: "/assets/images/projects/Pentheif/Pentheif.gif"
-    alt: "Making hot chocolate in X6 speed"
-  - image:
-    url: "/assets/images/projects/BotChoco/Choco_CV1.jpg"
-    alt: "Calibration robot arm"
-  - image:
-    url: "/assets/images/projects/BotChoco/Choco_CV2.jpg"
-    alt: "Calibration"
+    alt: "Take a pen from hand"
 
 ---
 
@@ -34,4 +28,6 @@ Ros, Python, OpenCV, Manipulation
 <p>In this project, a PincherX 100 robot arm was programmed to autonomously pick up a purple pen in the working space.</p>
 <br>
 
-The robot arm communicate with a computer which provides
+<p>The robot arm communicate with a computer which provides</p>
+
+<br><br>
