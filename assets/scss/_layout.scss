@@ -237,7 +237,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		@media (min-width: $breakpoint-medium){
-			max-width: 40%;
+			max-width: 100%;
 			margin-bottom: 16px;
 		}
 	}
@@ -246,7 +246,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		@media (min-width: $breakpoint-medium){
-			max-width: 80%;
+			max-width: 100%;
 			margin-bottom: 16px;
 		}
 	}
