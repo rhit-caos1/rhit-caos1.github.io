@@ -10,7 +10,7 @@ project:
   title: "Autonomous Train Control Robot"
   type: "Jekyll"
   url: "https://github.com/shantao/TrainControl"
-  logo: "/assets/images/projects/BotChoco/BotChocolate.gif"
+  logo: "/assets/images/projects/TrainControl/cover.gif"
   tech: "ROS, Python, CV, Machine Learning (Yolo V7), Control, Manipulation"
 
 images:
@@ -26,7 +26,7 @@ images:
 
 ---
 
-<p>full youtube video</p>
+<p>!!!!!!!full youtube video!!!!!!</p>
 
 <p>During the Winter quarter of 2023, I undertook an independent project in which I designed a control system that utilizes solely visual information to direct the movement of two PincherX 100 robot arms. The objective of the project was to utilize two robot arms to control the train controller, thereby driving the Caltrain's commuter train on Train Sim World - Caltrain's Peninsula Corridor route.</p>
 <br>
@@ -37,10 +37,10 @@ images:
 </p>
 
 ![crash](/assets/images/projects/TrainControl/crash4.jpg){:width="100%"}
-<center><h2>The obstacle on the track was visible at least 13 seconds before the accident occurred, however, the emergency brake was only applied 5 seconds before the impact.</h2></center>
+<center><h5>The obstacle on the track was visible at least 13 seconds before the accident occurred, however, the emergency brake was only applied 5 seconds before the impact.</h5></center>
 
 ![crash2](/assets/images/projects/TrainControl/crash.jpg){:width="60%"}
-<center><h2>This accident could could have been significantly mitigated</h2></center>
+<center><h5>This accident could could have been significantly mitigated</h5></center>
 
 <br>
 
@@ -48,6 +48,11 @@ images:
 
 <p>In this project, I successfully designed and implemented a visual-based train control system that can efficiently manage train operations. This system is capable of controlling the train's speed limit and stopping it automatically at the station without the need for human intervention. The system solely relies on visual input, allowing for seamless interaction with the simulator. </p>
 <br>
+
+![Project_running](/assets/images/projects/TrainControl/ProjectRunning.jpg){:width="80%"}
+<center><h5>The robots are currently controlling the train to approach its next scheduled stop.</h5></center>
+<br>
+
 <P>This system is a pixel-to-command system, which can work under a limited environment with constrained information.</p>
 <br>
 <p>Moreover, this system is independent of the simulator and interacts with it physically, making it possible to transfer the technology seamlessly to a real train.</p>
@@ -65,11 +70,11 @@ images:
 6. 3D printed adaptors and laser cutted jig
 
 ![Setup1](/assets/images/projects/TrainControl/Setup1.jpg){:width="80%"}
-<center><h2>The robot setup for this project. Include other hardwares</h2></center>
+<center><h5>The robot setup for this project. Include other hardwares</h5></center>
 <br>
 
 ![Setup2](/assets/images/projects/TrainControl/Setup2.jpg){:width="80%"}
-<center><h2>The computers and capture card used for this project</h2></center>
+<center><h5>The computers and capture card used for this project</h5></center>
 <br>
 
 ## Software:
@@ -81,7 +86,7 @@ images:
 <br>
 
 ![Flowchart](/assets/images/projects/TrainControl/Flowchart.png){:width="80%"}
-<center><h2>The pipeline of the control system.</h2></center>
+<center><h5>The pipeline of the control system.</h5></center>
 
 <br>
 <p>All important parts shows up in the flowchart will be discussed below.</p>
@@ -91,10 +96,16 @@ images:
 
 Video demo:
 
-<p> The Yolo v7 object detection framework is employed in this project for the purpose of rail marker detection. Through extensive testing, this framework has demonstrated a high degree of accuracy in detecting all the markers along the designated route. In order to achieve this level of performance, a custom training dataset was created specifically for use with YoloV7. While mileage markers were excluded from the dataset, all other markers were categorized as independent classes. The detection results obtained through this system will be utilized for generating speed curves and informing controller decision-making processes. </p><br>
+<p> The Yolo v7 object detection framework is employed in this project for the purpose of rail marker detection. Through extensive testing, this framework has demonstrated a high degree of accuracy in detecting all the markers along the designated route. In order to achieve this level of performance, a custom training dataset was created specifically for use with YoloV7. Although mileage markers were not categorized in detail within the dataset, all other markers on this route have been classified as independent classes. The detection results obtained through this system will be utilized for generating speed curves and informing controller decision-making processes. </p><br>
 
-The test result of the final model weight:
-Pic of model weights:
+![Prediction](/assets/images/projects/TrainControl/Prediction.jpg){:width="100%"}
+<center><h5>The test result of the final model weight which is used in this project</h5></center>
+
+<br>
+
+![Matrix](/assets/images/projects/TrainControl/cm.png){:width="90%"}
+<center><h5>The confusion matrix of this weight</h5></center>
+
 <br>
 
 ### Speed Recognition
@@ -117,18 +128,27 @@ Speed Curve example image:
 
 ### Robot control
 
-<p>In this project, we utilized two PincherX 100 robotic arms to manipulate the train speed. One arm is dedicated to throttle control, while the other controls the brakes. By using two robotic arms in this manner, we were able to significantly increase the response speed of the system. This approach allows for precise and timely adjustments to be made to the train's speed, enabling it to follow the predetermined speed curve more accurate than the single arm.</p> <br>
+<p>In this project, I utilized two PincherX 100 robotic arms to manipulate the train speed. One arm is dedicated to throttle control, while the other controls the brakes. By using two robotic arms in this manner, I was able to significantly increase the response speed of the system. This approach allows for precise and timely adjustments to be made to the train's speed, enabling it to follow the predetermined speed curve more accurate than the single arm.</p> <br>
 
-robot pic
+![Robot_pic](/assets/images/projects/TrainControl/robot_pic.jpg){:width="90%"}
+<center><h5>The robots are driving the train</h5></center>
+
+<br>
 
 ### Future Work:
 
 1. Utilize the detected information to construct a linear map of the railroad and accurately determine the train's location while it is in motion.
 
-2. Railroad signal detection
+2. Incorporate visual railroad signal detection and signal rule logic into the train control system for effective implementation.
 
-3. Visual odometry to get better distance measurement
+3. Visual odometry to get better distance measurement.
+
+4. Autonomous train horn and bell.
+<br>
 
 ### Github
 <p>More information and source code can be found on the project's <a href="https://github.com/rhit-caos1/Speed-Sign-Detection" target="_blank"><u>GitHub repository</u></a>.<p>
 
+<br>
+<br>
+<br>
