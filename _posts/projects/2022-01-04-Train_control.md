@@ -9,7 +9,7 @@ meta:
 project:
   title: "Autonomous Train Control Robot"
   type: "Jekyll"
-  url: "https://github.com/shantao/TrainControl"
+  url: "https://github.com/rhit-caos1/Speed-Sign-Detection"
   logo: "/assets/images/projects/TrainControl/cover.gif"
   tech: "ROS, Python, CV, Machine Learning (Yolo V7), Control, Manipulation"
 
@@ -24,11 +24,17 @@ images:
     url: "/assets/images/projects/BotChoco/Choco_CV2.jpg"
     alt: "Calibration"
 
+youtubeId1: u85oeBx49kE
+youtubeId2: EdhrMianmSo
+youtubeId3: sC9dOngCKAk
 ---
 
-<p>!!!!!!!full youtube video!!!!!!</p>
 
-<p>During the Winter quarter of 2023, I undertook an independent project in which I designed a control system that utilizes solely visual information to direct the movement of two PincherX 100 robot arms. The objective of the project was to utilize two robot arms to control the train controller, thereby driving the Caltrain's commuter train on Train Sim World - Caltrain's Peninsula Corridor route.</p>
+{% include youtubePlayer.html id=page.youtubeId1 %}
+
+<br>
+
+<p>During the Winter quarter of 2023, I worked on an independent project in which I designed a control system that utilizes solely visual information to direct the movement of two PincherX 100 robot arms. The objective of the project was to utilize two robot arms to control the train controller, thereby driving the Caltrain's commuter train on Train Sim World - Caltrain's Peninsula Corridor route.</p>
 <br>
 
 ## Background
@@ -58,7 +64,7 @@ images:
 <p>Moreover, this system is independent of the simulator and interacts with it physically, making it possible to transfer the technology seamlessly to a real train.</p>
 <br>
 
-### Structure 
+### Setup 
 <br>
 
 ## Hardware:
@@ -90,11 +96,13 @@ images:
 
 <br>
 <p>All important parts shows up in the flowchart will be discussed below.</p>
-
+<br>
 
 ### Object Detection
 
 Video demo:
+{% include youtubePlayer.html id=page.youtubeId2 %}
+<br>
 
 <p> The Yolo v7 object detection framework is employed in this project for the purpose of rail marker detection. Through extensive testing, this framework has demonstrated a high degree of accuracy in detecting all the markers along the designated route. In order to achieve this level of performance, a custom training dataset was created specifically for use with YoloV7. Although mileage markers were not categorized in detail within the dataset, all other markers on this route have been classified as independent classes. The detection results obtained through this system will be utilized for generating speed curves and informing controller decision-making processes. </p><br>
 
@@ -110,14 +118,19 @@ Video demo:
 
 ### Speed Recognition
 
-Opencv demo video (published velocity are x10 of real reading)
+Video demo:
+{% include youtubePlayer.html id=page.youtubeId3 %}
+<br>
 
 <p> The speed information used in this project is sourced directly from the 7-segment LED display on the train's controller. This information is captured through the Realsense camera, which provides an image of the current speed display. The image data is then processed using OpenCV to extract the relevant value, which is subsequently used by the train control system to regulate the train's speed. </p> <br>
 
 
 ### Speed Curve
 
-Speed Curve example image:
+![curve1](/assets/images/projects/TrainControl/curve1.png){:width="100%"}
+![curve2](/assets/images/projects/TrainControl/curve2.png){:width="100%"}
+<center><h5>Examples of speed curve implemented in normal train operation</h5></center>
+<br>
 
 <p>The speed curve is generated based on the current speed limit and station approaching status. This curve serves as a crucial reference point for the train's speed, and the controller is programmed to follow it closely to ensure accurate and autonomous control. By constantly referencing the speed curve, the train control system can regulate the train's speed efficiently, while also ensuring that it adheres to the predetermined speed limits and stops correctly at the designated station. </p> <br>
 
@@ -126,14 +139,13 @@ Speed Curve example image:
 
 <p> I encountered a challenge due to the high response time of the train to the control input, coupled with the long robot arm moving time in this project. To address this issue, I designed the train controller to generate commands that could eliminate the control overshoot problem, thereby ensuring that the train's speed remained within the predetermined limits. Furthermore, the controller was programmed with different control behaviors to suit various operational environments, enhancing the system's overall flexibility and adaptability. </p> <br>
 
-### Robot control
-
-<p>In this project, I utilized two PincherX 100 robotic arms to manipulate the train speed. One arm is dedicated to throttle control, while the other controls the brakes. By using two robotic arms in this manner, I was able to significantly increase the response speed of the system. This approach allows for precise and timely adjustments to be made to the train's speed, enabling it to follow the predetermined speed curve more accurate than the single arm.</p> <br>
-
+### Robot Control
 ![Robot_pic](/assets/images/projects/TrainControl/robot_pic.jpg){:width="90%"}
 <center><h5>The robots are driving the train</h5></center>
-
 <br>
+<p>In this project, I utilized two PincherX 100 robotic arms to manipulate the train speed. One arm is dedicated to throttle control, while the other controls the brakes. By using two robotic arms in this manner, I was able to significantly increase the response speed of the system. This approach allows for precise and timely adjustments to be made to the train's speed, enabling it to follow the predetermined speed curve more accurate than the single arm.</p> <br>
+
+
 
 ### Future Work:
 
