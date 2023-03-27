@@ -46,7 +46,7 @@ youtubeId3: sC9dOngCKAk
 <center><h5>The obstacle on the track was visible at least 13 seconds before the accident occurred, however, the emergency brake was only applied 5 seconds before the impact.</h5></center>
 
 ![crash2](/assets/images/projects/TrainControl/crash.jpg){:width="60%"}
-<center><h5>This accident could could have been significantly mitigated</h5></center>
+<center><h5>This accident could have been significantly mitigated</h5></center>
 
 <br>
 
