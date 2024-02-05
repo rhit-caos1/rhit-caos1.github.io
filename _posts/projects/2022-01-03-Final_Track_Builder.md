@@ -199,4 +199,6 @@ youtubeId3: KCg4BJLEzvw
 <p>More information and source code can be found on the project's<a href="https://github.com/rhit-caos1/trackbuilder_project/tree/Stage_1" target="_blank"><u>GitHub repository</u></a>.<p>
 
 <br>
+<p>(Paper in progress, all code will release to public after paper published)<p>
+
 <br>
