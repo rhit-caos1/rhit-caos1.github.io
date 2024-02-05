@@ -20,8 +20,12 @@ images:
 
 
 youtubeId1: u85oeBx49kE
-youtubeId2: EdhrMianmSo
-youtubeId3: sC9dOngCKAk
+
+youtubeId2: tdOf69g7VI0
+
+youtubeId3: KCg4BJLEzvw
+
+
 ---
 
 ### Intro
@@ -113,6 +117,7 @@ youtubeId3: sC9dOngCKAk
 
 <p>The robot system detects all tags within the scanning space, relaying tag position information to the robot controller and state machine. The state machine then updates track information and signals the generator to create the next track.</p>
 <br>
+
 <!-- Video: Scan workspace
 <br> -->
 
@@ -158,7 +163,8 @@ youtubeId3: sC9dOngCKAk
 <br>
 <p>Given the unique design of the printer as a belt printer, parts are effortlessly ejected from the print bed by simply rolling the belt forward. The newly printed track piece neatly falls into a designated area within the workspace, ready for the robot to collect upon completion of the printing process.</p>
 <br>
-Video: Drop Part
+{% include youtubePlayer.html id=page.youtubeId2 %}
+<center><h5>Belt printer is ejecting finished track track</h5></center>
 <br>
 
 ### Manipulation – Robot
