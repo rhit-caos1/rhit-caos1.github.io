@@ -25,7 +25,10 @@ youtubeId2: tdOf69g7VI0
 
 youtubeId3: KCg4BJLEzvw
 
-
+# Set to true for publish !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+######################
+######################
+published: false
 ---
 
 ### Intro
