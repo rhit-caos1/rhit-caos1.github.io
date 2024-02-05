@@ -9,7 +9,7 @@ meta:
 project:
   title: "Train Track Building Robot"
   type: "Jekyll"
-  url: "https://github.com/rhit-caos1/Train-Track-Construct"
+  url: "https://github.com/rhit-caos1/trackbuilder_project/tree/Stage_1"
   logo: "/assets/images/projects/Final/Cover.jpg"
   tech: "ROS, Python, CV, Automation, 3D Printing,  CAD, Manipulation"
 
