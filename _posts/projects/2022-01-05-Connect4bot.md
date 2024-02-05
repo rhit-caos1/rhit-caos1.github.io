@@ -51,9 +51,20 @@ youtubeId1: vKbEyXJEp4Y
 
 <br>
 <p>
+In the realm of artificial intelligence and game theory, devising an effective Connect 4 solver necessitates strategic algorithms capable of exploring the vast decision space inherent to the game. One such approach that showcases remarkable efficiency is the implementation of the Alpha-Beta Pruning algorithm. Alpha-Beta Pruning is a sophisticated search algorithm used in adversarial games like Connect 4, where two players take turns making moves with conflicting objectives.</p>
+
+<br>
+
+The Alpha-Beta Pruning algorithm minimizes the number of nodes evaluated in the search tree, significantly reducing computational complexity. This is achieved by intelligently discarding branches of the search tree that are guaranteed to be irrelevant for the final decision. In the context of Connect 4, where the potential move possibilities escalate rapidly, Alpha-Beta Pruning proves invaluable in focusing the computational resources on the most promising paths, facilitating quicker and more effective decision-making.</p>
+
+<br>
+
+The solver leverages a heuristic evaluation function to assess the desirability of various game states, enabling the algorithm to make informed decisions about the optimal moves. By employing Alpha-Beta Pruning, the Connect 4 solver efficiently navigates the decision space, balancing computational resources and strategic decision-making to provide a robust and effective solution to this classic game.</p>
 </p>
 <br>
 
+![AB_Pruning_example](/assets/images/projects/Connect4Bot/AB_pruning.png){:width="90%"}
+<center><h5>An illustration of alpha–beta pruning. </h5></center>
 
 
 ### Github
