@@ -164,7 +164,7 @@ youtubeId3: KCg4BJLEzvw
 <p>Given the unique design of the printer as a belt printer, parts are effortlessly ejected from the print bed by simply rolling the belt forward. The newly printed track piece neatly falls into a designated area within the workspace, ready for the robot to collect upon completion of the printing process.</p>
 <br>
 {% include youtubePlayer.html id=page.youtubeId2 %}
-<center><h5>Belt printer is ejecting finished track track</h5></center>
+<center><h5>Belt printer is ejecting finished train track (time x3)</h5></center>
 <br>
 
 ### Manipulation – Robot
