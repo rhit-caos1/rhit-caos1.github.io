@@ -100,24 +100,35 @@ youtubeId3: sC9dOngCKAk
 <center><h5>The AprilTag system, known for its maturity in fiducial marking, demands a black border encircled by a continuous white boundary for optimal functionality. Any disruption, even a small connecting line to the border, can compromise detection accuracy.</h5></center>
 
 <br>
-Picture: New tag design
+
+![Tag_3d](/assets/images/projects/Final/Tag_3D.png){:width="50%"}
+<center><h5>New tag design</h5></center>
 <br>
 <p>The custom-made tag design proves advantageous in detecting the orientation of the track, ensuring detection reliability even if parts of the tag outline are obstructed by connectors. The circular shape chosen for detection enhances robustness, allowing the detector to function effectively even if the circle is incomplete. Once the center of the circles is identified, a PnP (Perspective-n-Point) solver is employed to translate this information from the camera frame into real-world orientation.</p>
 <br>
-<p>The robot system detects all tags within the scanning space, relaying tag position information to the robot controller and state machine. The state machine then updates track information and signals the generator to create the next track.</p>
-<br>
-Video: Scan workspace
+
+![Tag_detect](/assets/images/projects/Final/Tag_detection.png){:width="70%"}
+<center><h5>Detecting the Tag position and orientation</h5></center>
 <br>
 
-### Design - SCAD and Slicer
+<p>The robot system detects all tags within the scanning space, relaying tag position information to the robot controller and state machine. The state machine then updates track information and signals the generator to create the next track.</p>
+<br>
+<!-- Video: Scan workspace
+<br> -->
+
+### Design - CAD Generator
 <br>
 <p>The track design is based on the Brio toy train track. The system generated intermediate tracks based on the provided start and end track information after scan information updated. Post-detection, the system reorganizes the tracks into a specific order, forming a closed loop. This track information is then relayed to the generator, updating it each time the detector detect the change in the environment. The Bezier curve generator plays a pivotal role in creating new curves that connect to the given track.</p>
 <br>
-Picture: Curve Plot
+
+![Curve_Gen](/assets/images/projects/Final/Curve_gen.png){:width="100%"}
+<center><h5>Create Bezier Curve according to the given start and end point information</h5></center>
 <br>
 <p>The system closely monitors the minimum curvature of the generated curve, ensuring that the new track accommodates the original Brio train's passage. Subsequently, the curve is automatically transmitted to a track generator, which generates the track based on the curve's shape. Tags and specially designed connectors are concurrently added to the track. The following image showcases the generated track in the OpenSCAD model.</p>
 <br>
-Picture: Scad file
+
+![Track_Gen](/assets/images/projects/Final/Track_Gen.png){:width="100%"}
+<center><h5>Generate the track cad with tag connected by using Bezier Curve as the reference</h5></center>
 <br>
 <p>OpenSCAD facilitates the conversion of this model into an STL file for processing by the slicer. The slicer, in turn, transforms the design into G-code, suitable for the 3D printer.</p>
 
@@ -125,7 +136,9 @@ Picture: Scad file
 
 <p>(Considerable effort has been invested in this phase to optimize both the tag and track designs, ensuring ease of detection and 3D printing compatibility)</p>
 <br>
-Picture: track family
+
+![Track_Evolution](/assets/images/projects/Final/Evolution.jpg){:width="100%"}
+<center><h5>Versions of tags and tracks we developed and tested.</h5></center>
 <br>
 
 ### Manufacture - Slicer and Printer:
@@ -133,11 +146,15 @@ Picture: track family
 <br>
 <p>The slicing process is carried out using Kiri-Moto, offering a command-line interface for seamless integration. Once the STL file is generated, the system converts it to a customized G-code, tailored to meet our specific printing requirements.</p>
 <br>
-Picture: kiri
+
+![Slicer](/assets/images/projects/Final/Kiri_Slicer.png){:width="50%"}
+<center><h5>Very useful slicer and works well in command line</h5></center>
 <br>
 <p>The implementation of OctoPrint on a Raspberry Pi, connected to the Creality CR30 printer, streamlines the printing process. Once the G-code is prepared, the control computer transmits the file to the printer, while the Raspberry Pi monitors the print progress and provides real-time status updates.</p>
 <br>
-Picture: printer
+
+![Printer](/assets/images/projects/Final/Printer.jpg){:width="80%"}
+<center><h5>Belt printer is printing new track for the robot system</h5></center>
 <br>
 <p>Given the unique design of the printer as a belt printer, parts are effortlessly ejected from the print bed by simply rolling the belt forward. The newly printed track piece neatly falls into a designated area within the workspace, ready for the robot to collect upon completion of the printing process.</p>
 <br>
@@ -149,23 +166,30 @@ Video: Drop Part
 <p>The Franka Emika Panda Cobot arm plays a crucial role in this project. With the camera positioned at the end effector, the robot not only handles the movement of track pieces but also serves as an essential component of the detection pipeline. Additionally, the robot is programmed with specialized movements to enhance detection accuracy and address misalignment issues effectively.</p>
 
 <br>
-Video/gif: Scanning
+
+![Robo_Scan](/assets/images/projects/Final/Robot_Scan.gif){:width="70%"}
+<center><h5>Robot is scanning tracks after system started</h5></center>
 <br>
-Video/gif: Grasp and Place Track
+
+![Robo_Place_Track](/assets/images/projects/Final/Robot_Grasp_Place.gif){:width="70%"}
+<center><h5>Robot is placing the new track to construct the track loop</h5></center>
 <br>
 
 <br>
 
 ### Future Improvements
 <br>
-Detection Accuracy: Presently, the detection accuracy hovers around 1-2mm. Our goal is to elevate this precision, aiming for a level of accuracy comparable to what April tags can achieve.
+<p>Detection Accuracy: Presently, the detection accuracy hovers around 1-2mm. Our goal is to elevate this precision, aiming for a level of accuracy comparable to what April tags can achieve.</p>
 <br>
-Design: While SCAD has been instrumental in our design process, unexpected assertion errors have surfaced during file conversion to STL via the command line. Considering this, we are exploring more stable alternatives for design work in the future.
+<p>Design: While SCAD has been instrumental in our design process, unexpected assertion errors have surfaced during file conversion to STL via the command line. Considering this, we are exploring more stable alternatives for design work in the future.</p>
 <br>
-Manufacture: The current printing time is notably lengthy. Future enhancements could involve optimizing printer performance to boost printing speed or upgrading to a more efficient printer.
+<p>Manufacture: The current printing time is notably lengthy. Future enhancements could involve optimizing printer performance to boost printing speed or upgrading to a more efficient printer.</p>
 <br>
-Manipulation: The Franka robot experiences intermittent malfunctions, likely due to bugs within the system. Addressing this issue requires revising content in the Franka ROS2 repository to ensure the robot's stability and reliability in operation. This is crucial for the success of the overall project.
+<p>Manipulation: The Franka robot experiences intermittent malfunctions, likely due to bugs within the system. Addressing this issue requires revising content in the Franka ROS2 repository to ensure the robot's stability and reliability in operation. This is crucial for the success of the overall project.</p>
 
+<br>
+### Github
+<br>
 <p>More information and source code can be found on the project's<a href="https://github.com/rhit-caos1/trackbuilder_project/tree/Stage_1" target="_blank"><u>GitHub repository</u></a>.<p>
 
 <br>
