@@ -145,6 +145,10 @@ published: true
 <!-- Video: Scan workspace
 <br> -->
 
+<h1>Right Now a new detector is under testing which could allow us remove the tag from the track</h1>
+
+<br>
+
 ### Design - CAD Generator
 <br>
 <p>The track design is based on the Brio toy train track. The system generated intermediate tracks based on the provided start and end track information after scan information updated. After detection, the system reorganizes the tracks into a specific order, forming a closed loop. This track information is then relayed to the generator, updating it each time the detector detect the change in the environment. The Bezier curve generator plays a pivotal role in creating new curves that connect to the given track.</p>
@@ -170,7 +174,7 @@ published: true
 <center><h5>Versions of tags and tracks we developed and tested.</h5></center>
 <br>
 
-<h1>Right Now a new detector is under testing which could allow us remove the tag from the track</h1>
+
 
 ### Manufacture - Slicer and Printer:
 
