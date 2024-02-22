@@ -170,6 +170,8 @@ published: true
 <center><h5>Versions of tags and tracks we developed and tested.</h5></center>
 <br>
 
+<h1>Right Now a new detector is under testing which could allow us remove the tag from the track</h1>
+
 ### Manufacture - Slicer and Printer:
 
 <br>
