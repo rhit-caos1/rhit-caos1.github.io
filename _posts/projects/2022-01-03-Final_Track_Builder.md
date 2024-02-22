@@ -19,7 +19,7 @@ images:
     alt: "Flowchart"
 
 
-youtubeId1: u85oeBx49kE
+youtubeId1: RBCiYRlLWH0
 
 youtubeId2: tdOf69g7VI0
 
@@ -28,7 +28,7 @@ youtubeId3: KCg4BJLEzvw
 # Set to true for publish !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ######################
 ######################
-published: false
+published: true
 ---
 
 ### Intro
@@ -36,6 +36,11 @@ published: false
 <p>For my final project in the Northwestern MSR program, I focused on creating an autonomous system. This system enables a robot to independently identify, design, and assemble objects within its environment, responding to specific requirements without requiring human intervention.</p>
 
 <br>
+
+<!-- {% include youtubePlayer.html id=page.youtubeId1 %} -->
+<h1>Full run video will not available until final paper is published. Some short timelapse videos below will show some components in the system and provide some simple concepts of the system.</h1>
+<br>
+
 
 <!-- ### Background
 <br>
@@ -50,8 +55,24 @@ published: false
 <p>For this project, the goal was to test the concept of autonomous construction. The robot was tasked with building a complete toy train track circuit, utilizing track pieces randomly placed by humans in the working space. Through collaboration with Professor Michael Rubenstein, Matthew Elwin, and Ph.D. Shane Deng, we successfully developed the basic structure of the system. The robot executed the task precisely as expected, demonstrating the practical application of autonomous construction in a controlled environment.</p>
 <br>
 
+![Demo](/assets/images/projects/Final/Robot_Scan.gif){:width="90%"}
+<center><h5>Robot is scanning workspace to detect existing tracks</h5></center>
+
+<br>
+
+<center><h5>After the detection, a piece of track is automatically generated to connect existing tracks and printed by 3D printer</h5></center>
+
+<br>
+
+![Demo](/assets/images/projects/Final/Part_Eject.gif){:width="90%"}
+<center><h5>New part is ejected from the 3D printer</h5></center>
+
+![Demo](/assets/images/projects/Final/Robot_Grasp_Place.gif){:width="90%"}
+<center><h5>Robot is placing the new track to construct the track loop</h5></center>
+
+
 ![Demo](/assets/images/projects/Final/Cover.jpg){:width="90%"}
-<center><h5>Robot is waiting for the new track to be printed</h5></center>
+<center><h5>Robot placed several tracks successfully and is waiting for the new track to be printed</h5></center>
 
 ### Setup
 
@@ -126,7 +147,7 @@ published: false
 
 ### Design - CAD Generator
 <br>
-<p>The track design is based on the Brio toy train track. The system generated intermediate tracks based on the provided start and end track information after scan information updated. Post-detection, the system reorganizes the tracks into a specific order, forming a closed loop. This track information is then relayed to the generator, updating it each time the detector detect the change in the environment. The Bezier curve generator plays a pivotal role in creating new curves that connect to the given track.</p>
+<p>The track design is based on the Brio toy train track. The system generated intermediate tracks based on the provided start and end track information after scan information updated. After detection, the system reorganizes the tracks into a specific order, forming a closed loop. This track information is then relayed to the generator, updating it each time the detector detect the change in the environment. The Bezier curve generator plays a pivotal role in creating new curves that connect to the given track.</p>
 <br>
 
 ![Curve_Gen](/assets/images/projects/Final/Curve_gen.png){:width="100%"}
@@ -166,8 +187,9 @@ published: false
 <br>
 <p>Given the unique design of the printer as a belt printer, parts are effortlessly ejected from the print bed by simply rolling the belt forward. The newly printed track piece neatly falls into a designated area within the workspace, ready for the robot to collect upon completion of the printing process.</p>
 <br>
-{% include youtubePlayer.html id=page.youtubeId2 %}
-<center><h5>Belt printer is ejecting finished train track (time x3)</h5></center>
+<!-- {% include youtubePlayer.html id=page.youtubeId2 %} -->
+![Printer](/assets/images/projects/Final/Part_Eject.gif){:width="80%"}
+<center><h5>Belt printer is ejecting finished train track (time x9)</h5></center>
 <br>
 
 ### Manipulation – Robot
