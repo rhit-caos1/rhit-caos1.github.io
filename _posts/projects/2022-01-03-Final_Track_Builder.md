@@ -25,6 +25,8 @@ youtubeId2: tdOf69g7VI0
 
 youtubeId3: KCg4BJLEzvw
 
+youtubeId4: Uzv7eY_zgps
+
 # Set to true for publish !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ######################
 ######################
@@ -136,11 +138,14 @@ published: true
 <br>
 
 ![Tag_detect](/assets/images/projects/Final/Tag_detection.png){:width="70%"}
+{% include youtubePlayer.html id=page.youtubeId4 %}
 <center><h5>Detecting the Tag position and orientation</h5></center>
 <br>
 
 <p>The robot system detects all tags within the scanning space, relaying tag position information to the robot controller and state machine. The state machine then updates track information and signals the generator to create the next track.</p>
 <br>
+
+
 
 <!-- Video: Scan workspace
 <br> -->
